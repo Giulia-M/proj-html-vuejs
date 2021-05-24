@@ -7,4 +7,47 @@
 .container {
   max-width: 1024px;
   width: 100%;
+  margin: auto;
+}
+
+section {
+  padding: 40px 0;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+nav .img-wrapper img {
+  max-width: 120px;
+  width: 100%;
+}
+nav .link_TopNav {
+  display: flex;
+  align-items: center;
+}
+nav .link_TopNav li {
+  padding: 0 15px;
+}
+nav .link_TopNav li a {
+  color: #3c4858;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav ul li div i:not(:first-of-type) {
+  background: #2f55d41a;
+  padding: 10px;
+  color: #2f55d4;
+  border-radius: 10px;
+}
+nav ul li div i:first-of-type {
+  color: #adb5bd;
+  margin-right: 6.6666666667px;
 }

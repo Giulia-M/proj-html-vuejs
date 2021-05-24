@@ -1,24 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Progetto</title>
-    <link rel="stylesheet" href="dist/app.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-    
+    <link rel="stylesheet" href="dist/app.css">
+
+
+
+
 </head>
+
 <body>
     <div id="app">
+        <!-- HEADER -->
+        <header class="container">
+            <nav>
+                <div class="img-wrapper">
+                    <img src="img/logo-dark.png" alt="logo">
+                </div>
 
-        <header></header>
+                <ul class="link_TopNav">
+                    <li v-for="textLink in navbarLinks">
+                        <a :href="textLink.link" v-if="textLink.link">{{textLink.text}}</a>
+                        
+                        <!-- non funziona -->
+                        <span  @click="clickMenu(textLink)">
+                            <i class="fas " :class="textLink.icon"></i>
+
+                            <!-- dropdown NON MI FUNZIONA-->
+                            
+                            <div class="dropdown" >
+
+                                <ul >
+                                    <li v-if="textLink.elementDropdown" v-for="subtitle in textLink.elementDropdown">
+                                        <a :href="subtitle.link" >{{subtitle.text}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </span>
+
+
+
+
+
+                    </li>
+
+
+                </ul>
+
+                <!--icone   -->
+                <ul>
+                    <li>
+                        <div v-for="button in navbarIcons">
+                            <i class="fas " :class="button.icon[0]"></i>
+                            <i class="fab " :class="button.icon[1]"></i>
+                            <i class="fab " :class="button.icon[2]"></i>
+                            <i class="fas " :class="button.icon[3]"></i>
+
+
+                        </div>
+
+
+                    </li>
+                </ul>
+
+
+
+            </nav>
+        </header>
+
+        <!-- MAIN -->
         <main></main>
-        <footer></footer>
 
-        <script src="scripts/myScript.js"></script>
+        <!-- FOOTER -->
+        <footer>
+
+        </footer>
+
+
+
     </div>
+    <script src="scripts/myScript.js"></script>
 </body>
+
 </html>
