@@ -158,6 +158,7 @@ const app = new Vue({
         clickText(currentText) {
             currentText.active = !currentText.active;
         }
+        
     },
 
 })

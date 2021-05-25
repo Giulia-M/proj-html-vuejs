@@ -31,3 +31,9 @@ button {
         font-size: $font-size;
     }
 }
+.new_btn {
+    background-color: $backg_blue_light;
+    border-radius: $border_radius_secondary;
+    border:1px solid $border_white_secondary;
+    padding:  $padding_new_btn;
+}

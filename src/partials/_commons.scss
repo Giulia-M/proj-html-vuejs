@@ -23,3 +23,10 @@ hr {
     margin-top: $spacing;
     border: 1px solid $border_grey;
 }
+
+h2 {
+    margin: $spacing 0;
+    font-size: $font_size *2;
+    line-height: $spacing * 2;
+}
+
