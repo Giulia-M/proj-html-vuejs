@@ -34,6 +34,16 @@ h2 {
   line-height: 40px;
 }
 
+.color-blue {
+  color: #2f55d4;
+  font-weight: bold;
+  display: inline-block;
+}
+
+p {
+  color: #8492a6;
+}
+
 nav {
   padding: 20px 0;
   display: flex;
@@ -89,6 +99,8 @@ nav ul.iconsNavbar li div i:not(:first-of-type) {
   color: #2f55d4;
   border-radius: 10px;
   cursor: pointer;
+  box-shadow: 0 0 10px #2f55d4;
+  margin-right: 14px;
 }
 nav ul.iconsNavbar li div i:not(:first-of-type):hover {
   background-color: #2f55d4;
@@ -241,11 +253,6 @@ nav ul.iconsNavbar li div i:first-of-type {
   color: #8492a6;
   margin-bottom: 40px;
 }
-.wrptext p .color-blue {
-  color: #2f55d4;
-  font-weight: bold;
-  display: inline-block;
-}
 
 .wrapNpm {
   width: 65%;
@@ -356,12 +363,19 @@ nav ul.iconsNavbar li div i:first-of-type {
   display: flex;
 }
 .wrapperBuy .wrap-options .col-4 {
-  width: calc((100% / 12) * 4);
+  width: 33.333333%;
   padding: 20px;
   margin-right: 20px;
   box-shadow: 0 4px 2px -2px #adb5bd;
   border: 1px solid #adb5bd;
   border-radius: 10px;
+}
+.wrapperBuy .wrap-options .col-4:hover {
+  box-shadow: 0px 15px 10px -15px #111;
+  border-bottom: 1px solid #2f55d4;
+  border-top: none;
+  border-right: none;
+  border-left: none;
 }
 .wrapperBuy .wrap-options .col-4 .text-font-size {
   font-size: 14px;
@@ -379,38 +393,54 @@ nav ul.iconsNavbar li div i:first-of-type {
   color: #2f55d4;
   margin-right: 10px;
 }
-.wrapperBuy .wrap-options .col-4 div {
-  margin-top: 40px;
+.wrapperBuy .wrap-options .col-4 .line {
+  min-width: 270px;
+  border-bottom: 1px solid #adb5bd;
+  background-color: #adb5bd;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 20px 0;
 }
 .wrapperBuy .wrap-options .option_Busin {
   position: relative;
 }
-
-.section7 {
-  text-align: center;
+.wrapperBuy .wrap-options .dark_btn.large_btn:hover {
+  background-color: #0b1e5a;
 }
-.section7 .emailWrapper {
+
+.secSubscribe {
+  text-align: center;
+  width: 42%;
+  margin-bottom: 80px;
+}
+.secSubscribe p {
+  line-height: 30px;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.secSubscribe .emailWrapper {
   position: relative;
 }
-.section7 .emailWrapper input {
-  width: 350px;
+.secSubscribe .emailWrapper input {
+  width: 100%;
+  border: 1px solid #adb5bd;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 21px;
 }
-.section7 .emailWrapper button {
-  position: absolute;
-  top: 10px;
-  right: 350px;
+.secSubscribe .emailWrapper input:focus {
+  outline: none;
 }
 
 footer {
-  background-color: #2f55d4;
+  background-color: #27314f;
+  padding-bottom: 60px;
 }
 footer .row {
   display: flex;
+  padding-top: 40px;
 }
 footer .row .col-4 {
-  width: calc((100% / 12) * 4);
+  width: 33.333333%;
 }
 footer .row .col-4 .img-logo {
   display: inline-block;
@@ -420,7 +450,22 @@ footer .row .col-4 .img-logo img {
   width: 100%;
 }
 footer .row .col-8 {
-  width: calc((100% / 12) * 8);
+  width: 66.666667%;
+}
+footer .row .col-8 .row {
+  display: flex;
+  justify-content: center;
+  padding-top: 0;
+}
+footer .row .col-8 .row .col-3 {
+  width: 25%;
+}
+footer .row .col-8 .row .col-3 i {
+  color: #adb5bd;
+  font-size: 9px;
+}
+footer .row .col-8 .row .col-4 {
+  width: 33.333333%;
 }
 
 button {
@@ -461,4 +506,22 @@ button a {
   border-radius: 21px;
   border: 1px solid #f8f9fc1a;
   padding: 7px 26px;
+}
+
+.large_btn {
+  width: 268px;
+}
+
+.new_btn_vDark {
+  background-color: #2f55d4;
+  border-radius: 21px;
+  border: 1px solid #2f55d4;
+  padding: 9px 26px;
+  position: absolute;
+  top: -10px;
+  right: 0;
+}
+.new_btn_vDark a {
+  color: #ffffff;
+  font-size: 14px;
 }

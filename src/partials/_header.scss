@@ -85,9 +85,10 @@ nav {
                     color:$text_blue_secondary;
                     border-radius: $border_radius;
                     cursor: pointer;
+                    box-shadow: 0 0 10px $border_blue;
 
                    
-                   
+                   margin-right: $spacing - 6px;
                 }
                 i:first-of-type {
                     cursor: pointer;

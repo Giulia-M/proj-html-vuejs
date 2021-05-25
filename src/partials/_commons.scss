@@ -30,3 +30,12 @@ h2 {
     line-height: $spacing * 2;
 }
 
+.color-blue{
+    color: $text_blue_secondary;
+    font-weight: bold;
+    display: inline-block;
+}
+p {
+
+    color: $text_grey_secondary;
+}

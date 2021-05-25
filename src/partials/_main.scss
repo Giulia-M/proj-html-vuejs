@@ -136,11 +136,7 @@
         color: $text_grey_secondary;
         margin-bottom: $spacing * 2;
 
-        .color-blue{
-            color: $text_blue_secondary;
-            font-weight: bold;
-            display: inline-block;
-        }
+       
     }
 }
 .wrapNpm {
@@ -282,8 +278,19 @@
             padding: $spacing;
             margin-right: $spacing;
             box-shadow: 0 4px 2px -2px $border_grey_secondary;
-            border: 1px solid $border_grey_secondary ;
+            border: 1px solid $border_grey_secondary;
             border-radius: $border_radius;
+
+            &:hover {
+                // box-shadow: 0px 4px 2px -2px $border_blue;
+                // box-shadow:0px 0px 5px #ccc;
+                box-shadow: 0px 15px 10px -15px #111;  
+                border-bottom: 1px solid $backg_blue_dark;
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                
+            }
             .text-font-size {
                 font-size: $font-size;
             }
@@ -301,9 +308,15 @@
                 }
 
             }
-            div {
-                margin-top: $spacing * 2;
+            .line {
+                min-width: $line_width;
+                border-bottom: 1px solid $border_grey_secondary;
+                background-color: $border_grey_secondary;
+                vertical-align: middle;
+                display: inline-block;
+                margin: $spacing 0;
             }
+       
             
             
         }
@@ -311,31 +324,40 @@
             position: relative;
             
         }
-        
+        .dark_btn.large_btn:hover {
+            background-color: $backg_blue_dark_plus;
+            
+        }
         
     }
 }
 
 
 
-.section7 {
+.secSubscribe {
     text-align: center;
+    width:$width_col_sectionSubsribe;
+    margin-bottom: $spacing * 4;
+    p {
+        line-height: 30px;
+        font-size: $font_size;
+        margin-bottom: $spacing + 10px;
+    }
     .emailWrapper {
-      
         position: relative;
+      
         
         input {
-            width: 350px;
+           
+            width: 100%;
+            border: 1px solid $border_grey_secondary;
             padding: $spacing / 2;
-            border-radius: $border_radius;
+            border-radius: $border_radius_secondary;
+            &:focus {
+                outline: none;
+            }
         }
-        button {
-            position: absolute;
-            top: 10px;
-            right: 350px;
-            
-            
-        }
+        
        
     }
 }

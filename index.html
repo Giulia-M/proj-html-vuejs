@@ -129,7 +129,7 @@
 
             <section class="features container">
                 <h2>Key Features</h2>
-                <p>Start working with <span>Landrick</span>that can provide everything you need to generate awareness,
+                <p>Start working with <span class="color-blue">Landrick</span> that can provide everything you need to generate awareness,
                     drive traffic, connect.</p>
                 <div class="row">
                     <div class="col-3">
@@ -280,7 +280,7 @@
             <section class="wrapperBuy container">
                 <h2>Our rates for developer from landrick team</h2>
                 <p class="text-Land">
-                    Start working with <span>Landrick</span> that can provide everything you need to generate awareness,
+                    Start working with <span class="color-blue">Landrick</span> that can provide everything you need to generate awareness,
                     drive traffic, connect.
                 </p>
 
@@ -292,7 +292,8 @@
                         </h1>
                         <p>Per Month</p>
                         <p>All the basics for businesses that are just getting started.</p>
-                        <div>
+                        <div class="line"></div>
+                        <div class="full-menu">
 
                             <p><i class="far fa-check-circle"></i>Full Access</p>
                             <p><i class="far fa-check-circle"></i>Enhanced Security</p>
@@ -301,10 +302,11 @@
                             <p><i class="far fa-check-circle"></i>Enhanced Security</p>
                         </div>
 
-                        <button><a href="#">Buy now</a></button>
+                        <button class="dark_btn large_btn"><a href="#">Buy now</a></button>
                         <p>*No credit card required</p>
 
                     </div>
+
                     <div class="col-4 option_Busin bestseller">
                         <!-- class="badge" -->
                         
@@ -314,7 +316,9 @@
                         </h1>
                         <p>Per Month</p>
                         <p>Better for growing businesses that want more customers.</p>
-                        <div>
+                        <div class="line"></div>
+
+                        <div class="full-menu">
 
                             <p><i class="far fa-check-circle"></i>Full Access</p>
                             <p><i class="far fa-check-circle"></i>Enhanced Security</p>
@@ -323,7 +327,7 @@
                             <p><i class="far fa-check-circle"></i>Enhanced Security</p>
                         </div>
 
-                        <button><a href="#">Buy now</a></button>
+                        <button class="dark_btn large_btn"><a href="#">Buy now</a></button>
                         <p>*No credit card required</p>
                     </div>
                     <div class="col-4">
@@ -333,8 +337,9 @@
                         </h1>
                         <p>Per Month</p>
                         <p>Advanced features for pros who need more customization.</p>
+                        <div class="line"></div>
 
-                        <div>
+                        <div class="full-menu">
                             <p><i class="far fa-check-circle"></i>Full Access</p>
                             <p><i class="far fa-check-circle"></i>Enhanced Security</p>
                             <p><i class="far fa-check-circle"></i>Source Files</p>
@@ -343,7 +348,7 @@
 
                         </div>
 
-                        <button><a href="#">Buy now</a></button>
+                        <button class="dark_btn large_btn"><a href="#">Buy now</a></button>
                         <p>*No credit card required</p>
 
                     </div>
@@ -351,15 +356,17 @@
             </section>
 
             <!-- sezione 6  -->
-            <section class="section7">
+            <section class="secSubscribe container">
                 <div>
                     <h2>Want to be among the first to find out?</h2>
-                    <p>Start working with <span>Landrick</span> that can provide everything you need to generate
-                        awareness, drive traffic, connect.</p>
+                    <p>
+                        Start working with <span class="color-blue">Landrick</span> that can provide everything you need to generate
+                        awareness, drive traffic, connect.
+                    </p>
 
                     <div class="emailWrapper">
                         <input @key.enter="getpopup" type="text" placeholder="Email Address">
-                        <button><a href="#">Get Started</a></button>
+                        <button class="new_btn_vDark"><a href="#">Get Started</a></button>
                     </div>
                 </div>
             </section>
@@ -374,7 +381,8 @@
                     </div>
                     <div>
                         <p>Start working with Landrick that can provide everything you need to generate awareness, drive
-                            traffic, connect.</p>
+                            traffic, connect.
+                        </p>
 
                         <div>
                             <i class="fab fa-facebook-square"></i>
@@ -387,19 +395,19 @@
                 <div class="col-8">
                     <div class="row">
                         <div class="col-3">
-                            <h2>Company</h2>
+                            <h4>Company</h4>
 
                             <ul>
                                 <li v-for="link in footerLink">
-
+                                    <i  class="fas " :class="link.icon"></i>
                                     <a href="#" v-if="link.text">{{link.text}}</a>
-                                    <i class="fas "></i>
+                                    
 
                                 </li>
                             </ul>
                         </div>
                         <div class="col-3">
-                            <h2>Useful Links</h2>
+                            <h4>Useful Links</h4>
 
 
                             <ul>
@@ -408,9 +416,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-6">
+                        <div class="col-4">
 
-                            <h2>Newsletter</h2>
+                            <h4>Newsletter</h4>
                             <p>Sign up and receive the latest tips via email.</p>
                             <h6>Write your email <span>*</span></h6>
                             <input type="text" placeholder="Your email: ">

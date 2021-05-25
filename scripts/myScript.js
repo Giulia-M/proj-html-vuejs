@@ -116,10 +116,12 @@ const app = new Vue({
             {
                 text: "Privacy Policy",
                 icon: "fa-chevron-right "
-            },{
+            },
+            {
                 text: "Documentation",
                 icon: "fa-chevron-right "
-            },{
+            },
+            {
                 text: "Changelog",
                 icon: "fa-chevron-right "
             },
@@ -158,7 +160,7 @@ const app = new Vue({
         clickText(currentText) {
             currentText.active = !currentText.active;
         }
-        
+
     },
 
 })
