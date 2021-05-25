@@ -125,11 +125,7 @@
 
             </section>
            
-
-            
-
-
-            <!-- section 3 -->
+            <!-- section 2 -->
 
             <section class="features container">
                 <h2>Key Features</h2>
@@ -203,40 +199,49 @@
                 </div>
             </section>
 
-            <!-- sezione 4 -->
-            <section>
-                <h5>Quickstart</h5>
-                <h2>Awesome isn't it? Let's dive in!</h2>
-                <p>Start working with Landrick that can provide everything you need to generate awareness, drive
-                    traffic, connect.</p>
+            <!-- sezione 3 -->
+            <section class="container">
+                <div class="wrptext">
+                    <h5>Quickstart</h5>
+                    <h2>Awesome isn't it? Let's dive in!</h2>
+                    <p>
+                        Start working with <span class="color-blue">Landrick</span> that can provide everything you need to generate awareness, drive
+                        traffic, connect.
+                    </p>
+                </div>
+                
                 <div class="wrapNpm">
                     <ul>
-                        <li :class="text.active === true ? 'background' : 'none'" v-for=" text in listLandrick"
+                        <li :class="text.active === true ? 'background' : 'none'" 
+                            v-for=" text in listLandrick"
                             @click.prevent="clickText(text)">
-                            <a href="#">{{text.text}} </a>
+                            {{text.text}}
+                            
+                            
                         </li>
-                        <li>nuget</li>
-                        <li>spm</li>
-                        <li>github</li>
+                        
                     </ul>
-                    <p><span>$</span> npm install <span>-g</span> claps.js</p>
+                    
+                    <ul class="comandnpm">
+                        <li><span class="color-green">$</span> npm install <span class="color-green">-g</span> claps.js</li>
+                    </ul>
 
-                    <div class="checkCircle">
-                        <div>
+                </div>
 
-                            <span><i class="far fa-check-circle"></i>Organize your data</span>
-                        </div>
-                        <div>
+                <div class="checkCircle">
+                    <div>
 
-                            <span><i class="far fa-check-circle"></i>Work with any team</span>
-                        </div>
+                        <span><i class="far fa-check-circle specialCircle"></i>Organize your data</span>
+                    </div>
+                    <div>
 
+                        <span><i class="far fa-check-circle specialCircle"></i>Work with any team</span>
                     </div>
 
                 </div>
             </section>
 
-            <!-- section 5 -->
+            <!-- section 4 -->
             <section class="toolsWrap">
 
                 <div class="row">

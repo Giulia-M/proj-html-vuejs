@@ -134,14 +134,14 @@ const app = new Vue({
                 active: false
             },
             {
-                text: "npm",
+                text: "nuget",
                 active: false
             },{
-                text: "npm",
+                text: "spm",
                 active: false
             },
             {
-                text: "npm",
+                text: "github",
                 active: false
             }
         ]

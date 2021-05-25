@@ -196,26 +196,85 @@ section .row .col-6 p, section .row .col-6 h5 {
   display: none;
 }
 
-.wrapNpm ul {
+.wrptext {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+.wrptext h5 {
+  color: #2f55d4;
+  margin-bottom: 40px;
+}
+.wrptext h2 {
+  margin-bottom: 40px;
+}
+.wrptext p {
+  color: #8492a6;
+}
+.wrptext p .color-blue {
+  color: #2f55d4;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.wrapNpm {
+  width: 65%;
+  margin: auto;
+  background-color: #3c4858;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.wrapNpm ul:first-of-type {
   display: flex;
+  background-color: #4f5a69;
+  justify-content: space-around;
+  border: 1px solid #adb5bd;
+  border-radius: 10px;
 }
-.wrapNpm ul li {
-  padding: 20px 40px;
+.wrapNpm ul:first-of-type li {
+  color: #ffffff;
+  padding: 10px 10px;
+  text-align: center;
+  cursor: pointer;
+  width: 150px;
+  border-radius: 12px;
 }
-.wrapNpm .checkCircle {
+.wrapNpm ul:first-of-type li:hover {
+  transform: background-color 0.6;
+  background-color: #3c4858;
+}
+
+.checkCircle {
   display: flex;
+  width: 65%;
+  margin: auto;
+  margin-top: 20px;
 }
-.wrapNpm .checkCircle div {
+.checkCircle div {
   margin-right: 20px;
 }
-.wrapNpm .checkCircle div span i {
+.checkCircle div span i {
   margin-right: 10px;
 }
-.wrapNpm .background {
-  background-color: grey;
+
+.background {
+  background-color: #3c4858;
 }
-.wrapNpm .none {
-  background-color: none;
+
+.none {
+  background-color: transparent;
+}
+
+.comandnpm {
+  margin-top: 10px;
+}
+.comandnpm .color-green {
+  color: #2eca8b;
+}
+
+.specialCircle {
+  color: #2eca8b;
 }
 
 .toolsWrap div {

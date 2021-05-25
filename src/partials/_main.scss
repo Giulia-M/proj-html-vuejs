@@ -113,35 +113,99 @@ section {
     }
 }
 
-.wrapNpm {
-    ul {
-        display: flex;
-        li{
-            padding: $spacing ($spacing * 2);
+
+//sezione 3
+.wrptext {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    h5 {
+        color: $backg_blue_dark;
+        margin-bottom: $spacing * 2;
+    }
+    h2 {
+        margin-bottom: $spacing * 2;
+    }
+    p {
+        color: $text_grey_secondary;
+        .color-blue{
+            color: $text_blue_secondary;
+            font-weight: bold;
+            display: inline-block;
         }
     }
-    .checkCircle {
+}
+.wrapNpm {
+    width: 65%;
+    margin: auto;
+    background-color: $backg_grey_primary;
+    color: $text_color_white;
+    padding: $spacing;
+    border-radius: $border_radius;
+    ul:first-of-type {
         display: flex;
-        div {
-            margin-right: $spacing;
-            span {
-                i {
-
-                    margin-right: ($spacing / 2);
-                }
-                
+        background-color:$backg_npm;
+        
+        justify-content: space-around;
+        border: 1px solid $border_grey_secondary;
+        border-radius: $border_radius;
+        li {
+         
+            color: $text_color_white;
+            padding: 10px 10px;
+            text-align: center;
+            cursor: pointer;
+           
+            width: 150px;
+            border-radius: 12px;
+            
+            &:hover {
+                transform: background-color .6;
+                background-color:$backg_grey_primary;
             }
         }
-        
     }
-    .background {
-        background-color: grey;
+    
+}
+
+.checkCircle {
+    display: flex;
+    width: 65%;
+    margin: auto;
+    margin-top: $spacing;
+    div {
+        margin-right: $spacing;
+        span {
+            i {
+
+                margin-right: ($spacing / 2);
+            }
+            
+        }
     }
-    .none {
-        background-color: none;
+    
+}
+
+.background {
+    background-color: $backg_grey_primary;
+    
+
+}
+.none {
+    background-color: transparent;
+}
+.comandnpm {
+    margin-top: $spacing / 2;
+    .color-green {
+        color: $backg_green_secondary;
     }
 }
 
+.specialCircle {
+    color: $backg_green_secondary;
+}
+
+//sezione 4
 .toolsWrap {
     div {
         display: block;
