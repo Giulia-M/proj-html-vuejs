@@ -1,0 +1,20 @@
+footer {
+    background-color: $backg_blue_dark;
+    .row {
+        display: flex;
+        .col-4 {
+            width: calc((100% / 12) * 4);
+            .img-logo {
+                display: inline-block;
+                img {
+                    max-width: $img_max_width;
+                    width: $img_width;
+                }
+            }
+        }
+
+        .col-8 {
+            width: calc((100% / 12) * 8);
+        }
+    }
+}

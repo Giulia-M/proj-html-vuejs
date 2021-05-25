@@ -1,7 +1,8 @@
-const app = new Vue ({
+const app = new Vue({
     el: "#app",
     data: {
-        pullDownMenu: false,
+
+        
         navbarLinks: [
             {
                 text: "Home",
@@ -12,19 +13,21 @@ const app = new Vue ({
                 link: "#",
                 elementDropdown: [
                     {
-                    text: "Websait Hosting",
-                    link: "#"
+                        text: "Websait Hosting",
+                        link: "#"
                     },
                     {
-                    text: "Gaming Development",
-                    link: "#"
+                        text: "Gaming Development",
+                        link: "#"
                     },
                     {
-                    text: "Cloud VPN",
-                    link: "#"
+                        text: "Cloud VPN",
+                        link: "#"
                     }
                 ],
-                icon: "fa-chevron-down"
+                icon: "fa-chevron-down",
+                pullDownMenu: false,
+
             },
             {
                 text: "Pages",
@@ -32,23 +35,25 @@ const app = new Vue ({
                 icon: "fa-chevron-down",
                 elementDropdown: [
                     {
-                    text: "Web & Mobile Apps",
-                    link: "#"
+                        text: "Web & Mobile Apps",
+                        link: "#"
                     },
                     {
                         text: "Big Data Computing",
                         link: "#"
                     }
                 ],
+                pullDownMenu: false,
 
-            },{
+
+            }, {
                 text: "Docs",
                 link: "#",
                 icon: "fa-chevron-down",
                 elementDropdown: [
                     {
-                    text: "Video Streaming Hosting",
-                    link: "#"
+                        text: "Video Streaming Hosting",
+                        link: "#"
                     },
 
                     {
@@ -56,26 +61,103 @@ const app = new Vue ({
                         link: "#"
                     }
                 ],
+                pullDownMenu: false,
+
             },
-            
+
         ],
 
         navbarIcons: [
             {
                 icon: ["fa-search", "fa-github", "fa-stack-overflow", "fa-user-alt"]
-            }    
+            }
+        ],
+
+        footerLink: [
+            {
+                text: "About us",
+                icon: "fa-chevron-right "
+            },
+            {
+                text: "Services",
+                icon: "fa-chevron-right "
+            },
+            {
+                text: "Team",
+                icon: "fa-chevron-right "
+            },
+            {
+                text: "Pricing",
+                icon: "fa-chevron-right "
+            },
+            {
+                text: "Project",
+                icon: "fa-chevron-right "
+            },
+            {
+                text: "Careers",
+                icon: "fa-chevron-right "
+            },
+            {
+                text: "Blog",
+                icon: "fa-chevron-right "
+            },
+            {
+                text: "Login",
+                icon: "fa-chevron-right "
+            }
+        ],
+
+        footerUsefulLink: [
+            {
+                text: "Terms of Services",
+                icon: "fa-chevron-right "
+            },
+            {
+                text: "Privacy Policy",
+                icon: "fa-chevron-right "
+            },{
+                text: "Documentation",
+                icon: "fa-chevron-right "
+            },{
+                text: "Changelog",
+                icon: "fa-chevron-right "
+            },
+            {
+                text: "Components",
+                icon: "fa-chevron-right "
+            }
+        ],
+        listLandrick: [
+            {
+                text: "npm",
+                active: false
+            },
+            {
+                text: "npm",
+                active: false
+            },{
+                text: "npm",
+                active: false
+            },
+            {
+                text: "npm",
+                active: false
+            }
         ]
 
     },
-    methods : {
+    methods: {
         //NON FUNZIONA
-        clickMenu (textLink) {
-            if(!textLink.elementDropdown) {
+        clickMenu(currentLink) {
+            if (!currentLink.elementDropdown) {
                 return
             }
-            this.pullDownMenu = !this.pullDownMenu;
-
-
+            currentLink.pullDownMenu = !currentLink.pullDownMenu;
+        },
+        clickText(currentText) {
+            currentText.active = !currentText.active;
         }
-    }
+    },
+
 })

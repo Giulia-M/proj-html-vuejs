@@ -1,0 +1,137 @@
+section {
+    
+    .row {
+        display: flex;
+        .col-6 {
+            width:50%;
+        }
+    }
+}
+.wrapBrand {
+    display: flex;
+    justify-content: center;
+    div {
+        margin: 0 ($spacing * 2);
+        img {
+            max-width: $brand_max_width;
+            width: $img_width;
+        }
+    }
+}
+.features {
+    .row {
+        .col-3 {
+            width: 25%;
+            padding: $spacing;
+            .wrapBackground {
+                // background-image:url(https://images.prismic.io/www-static/3feed7b8-c2d5-4cbb-95c8-ecc177ae05f9_contact-bg.jpeg?auto=compress,format);
+                // background-color:#0069ff;
+                background-image: url("../../img/cielo.jpg");
+            }
+        }
+    }
+}
+
+.wrapNpm {
+    ul {
+        display: flex;
+        li{
+            padding: $spacing ($spacing * 2);
+        }
+    }
+    .checkCircle {
+        display: flex;
+        div {
+            margin-right: $spacing;
+            span {
+                i {
+
+                    margin-right: ($spacing / 2);
+                }
+                
+            }
+        }
+        
+    }
+    .background {
+        background-color: grey;
+    }
+    .none {
+        background-color: none;
+    }
+}
+
+.toolsWrap {
+    div {
+        display: block;
+    }
+    .row {
+        display: flex;
+        .col-6 {
+            width: 50%;
+        }
+        div {
+            img {
+                max-width: $graphic_width;
+                width: $img_width;
+            }
+        }
+    }
+}
+.sec6 {
+
+    .wrap-options {
+        display: flex;
+        justify-content: space-around;
+        div {
+            width: 200px;
+           
+            padding: $spacing;
+            
+        }
+        .option_Busin {
+            position: relative;
+            .badge  {
+                width: 60px;
+                p {
+                    text-align: center;
+                }
+                position: absolute;
+                transform: rotate(25deg);
+                top: 0;
+                right: 0;
+              
+                padding: 3px;;
+            
+                background-color: chocolate;
+            }
+        }
+        
+        
+    }
+}
+
+
+
+.section7 {
+    text-align: center;
+    .emailWrapper {
+      
+        position: relative;
+        
+        input {
+            width: 350px;
+            padding: $spacing / 2;
+            border-radius: $border_radius;
+        }
+        button {
+            position: absolute;
+            top: 10px;
+            right: 350px;
+            
+            
+        }
+       
+    }
+}
+    

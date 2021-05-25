@@ -28,28 +28,24 @@
                 </div>
 
                 <ul class="link_TopNav">
-                    <li v-for="textLink in navbarLinks">
+                    <li  v-for="textLink in navbarLinks" >
                         <a :href="textLink.link" v-if="textLink.link">{{textLink.text}}</a>
                         
                         <!-- non funziona -->
-                        <span  @click="clickMenu(textLink)">
+                        <span @click="clickMenu(textLink)" >
                             <i class="fas " :class="textLink.icon"></i>
 
                             <!-- dropdown NON MI FUNZIONA-->
                             
-                            <div class="dropdown" >
+                           
 
                                 <ul >
-                                    <li v-if="textLink.elementDropdown" v-for="subtitle in textLink.elementDropdown">
+                                    <li v-if="textLink.pullDownMenu" v-for="subtitle in textLink.elementDropdown">
                                         <a :href="subtitle.link" >{{subtitle.text}}</a>
                                     </li>
                                 </ul>
-                            </div>
+                            
                         </span>
-
-
-
-
 
                     </li>
 
@@ -72,16 +68,312 @@
                     </li>
                 </ul>
 
-
-
             </nav>
         </header>
 
         <!-- MAIN -->
-        <main></main>
+        <main class="container">
+
+            <!-- section 1 con background -->
+            <section >
+                <div class="row">
+                    <div class="col-6">
+                        <button><a href="#">Development</a></button>
+                        <h1>A Complete <br>
+                        Developer Toolset</h1>
+                        <p>Launch your campaign and benefit from our expertise on designing and managing conversion centered bootrstap4 html page.</p>
+
+                        <button><a href="#">Get Started</a></button>
+                        <button><a href="#">Documentation</a></button>
+                        <h6>Current Version: v2.6.0</h6>
+
+                    </div>
+                    <div class="col-6">
+                        <img src="img/about.png" alt="person at work">
+                    </div>
+                </div>
+            </section>
+            <hr>
+
+            <!-- section 2 con background -->
+            <section class="wrapBrand">
+                
+                <div>
+                    <img src="img/amazon.svg" alt="amazon">
+
+                </div>
+                <div>
+                    <img src="img/google.svg" alt="google">
+
+                </div>
+                <div>
+                    <img src="img/lenovo.svg" alt="lenovo">
+
+                </div>
+                <div>
+
+                    <img src="img/paypal.svg" alt="paypal">
+                </div>
+                <div>
+
+                    <img src="img/shopify.svg" alt="shopify">
+                </div>
+                <div>
+
+                    <img src="img/spotify.svg" alt="spotify">
+                </div>
+
+                
+            </section>
+
+
+            <!-- section 3 -->
+
+            <section class="features">
+                <h2>Key Features</h2>
+                <p>Start working with <span>Landrick</span>that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                <div class="row">
+                    <div class="col-3">
+                        <div>
+                            <i class="fas fa-layer-group"></i>
+                            <h3>Modular</h3>
+                            <p>Composed in a pseudo-Latin language which more or less corresponds.</p>
+                            <!-- effetto hover -->
+                            <a href="#">Read More 
+                                <i class="fas fa-chevron-right"></i> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <i class="fas fa-border-all"></i>
+                            <h3>Responsive</h3>
+                            <p>Composed in a pseudo-Latin language which more or less corresponds.</p>
+                            <!-- effetto hover -->
+                            <a href="#">Read More 
+                                <i class="fas fa-chevron-right"></i> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="wrapBackground">
+                            <i class="fab fa-bootstrap"></i>
+                            <h3>Customizable</h3>
+                            <p>Composed in a pseudo-Latin language which more or less corresponds.</p>
+                            <!-- effetto hover -->
+                            <a href="#">Read More 
+                                <i class="fas fa-chevron-right"></i> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <i class="fas fa-arrows-alt"></i>
+                            <h3>Scalable</h3>
+                            <p>Composed in a pseudo-Latin language which more or less corresponds.</p>
+                            <!-- effetto hover -->
+                            <a href="#">Read More 
+                                <i class="fas fa-chevron-right"></i> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- sezione 4 -->
+            <section>
+                <h5>Quickstart</h5>
+                <h2>Awesome isn't it? Let's dive in!</h2>
+                <p>Start working with Landrick that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                <div class="wrapNpm">
+                    <ul>
+                        <li :class="text.active === true ? 'background' : 'none'" v-for=" text in listLandrick" @click.prevent="clickText(text)">
+                            <a href="#">{{text.text}} </a>
+                        </li>
+                        <li>nuget</li>
+                        <li>spm</li>
+                        <li>github</li>
+                    </ul>
+                    <p><span>$</span> npm install <span>-g</span> claps.js</p>
+
+                    <div class="checkCircle">
+                        <div>
+
+                            <span><i class="far fa-check-circle"></i>Organize your data</span>
+                        </div>
+                        <div>
+
+                            <span><i class="far fa-check-circle"></i>Work with any team</span>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!-- section 5 -->
+            <section class="toolsWrap">
+
+                <div class="row">
+                    <div class="col-6">
+
+                        <h2>Build tools and <br>
+                        extensive documention</h2>
+                        <p>You can combine all the Landrick templates into a single one, you can take a component from the Application theme and use it in the Website.</p>
+                        <div>
+                            <div><i class="far fa-check-circle"></i>Digital Marketing Solutions for Tomorrow</div>
+                            <div><i class="far fa-check-circle"></i>Our Talented & Experienced Marketing Agency</div>
+                            <div><i class="far fa-check-circle"></i>Create your own skin to match your brand</div>
+        
+        
+                        </div>
+                        <button><a href="#">Read More</a><i class="fas fa-arrow-right"></i></button>
+                    </div>
+
+                    
+                    <div class="col-6">
+                        <div>
+                            <img src="img/1.png" alt="grafico">
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </section>
+
+            <!-- sezione 6 -->
+            <section class="sec6">
+                <h2>Our rates for developer from landrick team</h2>
+                <p>Start working with <span>Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+
+                <div class="wrap-options">
+                    <div>
+                        <button><a href="#">Basic</a></button>
+                        <h1>
+                            $9.00
+                        </h1>
+                        <p>Per Month</p>
+                        <p>All the basics for businesses that are just getting started.</p>
+
+                        <p><i class="far fa-check-circle"></i>Full Access</p>
+                        <p><i class="far fa-check-circle"></i>Enhanced Security</p>
+                        <p><i class="far fa-check-circle"></i>Source Files</p>
+                        <p><i class="far fa-check-circle"></i>1 Domain Free</p>
+                        <p><i class="far fa-check-circle"></i>Enhanced Security</p>
+
+                        <button><a href="#">Buy now</a></button>
+                        <p>*No credit card required</p>
+
+                    </div>
+                    <div class="option_Busin">
+                        <div class="badge">
+                            <p>Best</p>
+                        </div>
+                        <button><a href="#">Business</a></button>
+                        <h1>
+                            $39.00
+                        </h1>
+                        <p>Per Month</p>
+                        <p>Better for growing businesses that want more customers.</p>
+
+                        <p><i class="far fa-check-circle"></i>Full Access</p>
+                        <p><i class="far fa-check-circle"></i>Enhanced Security</p>
+                        <p><i class="far fa-check-circle"></i>Source Files</p>
+                        <p><i class="far fa-check-circle"></i>1 Domain Free</p>
+                        <p><i class="far fa-check-circle"></i>Enhanced Security</p>
+
+                        <button><a href="#">Buy now</a></button>
+                        <p>*No credit card required</p>
+                    </div>
+                    <div>
+                        <button><a href="#">Enterprise</a></button>
+                        <h1>
+                            $79.00
+                        </h1>
+                        <p>Per Month</p>
+                        <p>Advanced features for pros who need more customization.</p>
+
+                        <p><i class="far fa-check-circle"></i>Full Access</p>
+                        <p><i class="far fa-check-circle"></i>Enhanced Security</p>
+                        <p><i class="far fa-check-circle"></i>Source Files</p>
+                        <p><i class="far fa-check-circle"></i>1 Domain Free</p>
+                        <p><i class="far fa-check-circle"></i>Enhanced Security</p>
+
+                        <button><a href="#">Buy now</a></button>
+                        <p>*No credit card required</p>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- sezione 7  -->
+            <section class="section7">
+                <div>
+                    <h2>Want to be among the first to find out?</h2>
+                    <p>Start working with <span>Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+
+                    <div class="emailWrapper">
+                        <input type="text" placeholder="Email Address">
+                        <button><a href="#">Get Started</a></button>
+                    </div>
+                </div>
+            </section>
+        </main>
 
         <!-- FOOTER -->
-        <footer>
+        <footer >
+            <div class="row container">
+                <div class="col-4">
+                    <div class="img-logo">
+                        <img src="img/logo-light.png" alt="logo">
+                    </div>
+                    <div>
+                        <p>Start working with Landrick that can provide everything you need to generate awareness, drive traffic, connect.</p>
+
+                        <div>
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter-square"></i>
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-3">
+                            <h2>Company</h2>
+
+                            <ul>
+                                <li v-for="link in footerLink">
+                                    
+                                    <a href="#" v-if="link.text">{{link.text}}</a>
+                                    <i class="fas "></i>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <h2>Useful Links</h2>
+
+
+                            <ul>
+                                <li v-for="link in footerUsefulLink">
+                                    <a href="#" v-if="link.text">{{link.text}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+
+                            <h2>Newsletter</h2>
+                            <p>Sign up and receive the latest tips via email.</p>
+                            <h6>Write your email <span>*</span></h6>
+                            <input type="text" placeholder="Your email: ">
+                            <button><a href="#">Subscribe</a></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
         </footer>
 
