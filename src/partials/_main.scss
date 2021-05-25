@@ -1,15 +1,29 @@
+.back_color_light {
+    background-color:#f8f9fc;
+    /* Curved corners */
+    border-bottom-left-radius: 50% 21%;
+    border-bottom-right-radius: 50% 16%;
+}
+
 section {
-    
     .row {
         display: flex;
+        
         .col-6 {
-            width:50%;
+            width:$col-6;
+            h1 {
+                margin: ($spacing - 10px) 0;
+            }
+            p, h5 {
+                color: $text_grey_secondary;
+            }
         }
     }
 }
 .wrapBrand {
     display: flex;
     justify-content: center;
+    margin-top: $spacing * 3;
     div {
         margin: 0 ($spacing * 2);
         img {
@@ -19,14 +33,80 @@ section {
     }
 }
 .features {
+    h2 {
+        margin: $spacing 0;
+        font-size: $font_size *2;
+    }
+    p {
+
+        color: $text_grey;
+    }
+
     .row {
         .col-3 {
             width: 25%;
             padding: $spacing;
-            .wrapBackground {
-                // background-image:url(https://images.prismic.io/www-static/3feed7b8-c2d5-4cbb-95c8-ecc177ae05f9_contact-bg.jpeg?auto=compress,format);
-                // background-color:#0069ff;
-                background-image: url("../../img/cielo.jpg");
+            .backg_Modules {
+                padding: ($spacing * 2) $spacing; 
+                border: 1px solid $border_grey;
+                z-index: 2;
+                position: relative;
+                overflow: hidden;
+                &:hover {
+                    #backgIcon {
+                        display: block;
+                    }
+                }
+                #backgIcon{
+                    position: absolute;
+                    
+                    z-index: -1;
+                    color: $backg_blue_light;
+                    font-size: 220px;
+                    left: 38px;
+                    top: 9px;
+                    display: none;
+                }
+                h3 {
+                    margin: ($spacing / 2) 0;
+                }
+                p {
+                    margin: $spacing 0;
+
+                }
+                i:not(a > i, #backgIcon){
+                    background: #2f55d41a;
+                    padding: $spacing - 4px;
+                    color: #2f55d4;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    margin-bottom: 10px;
+                }
+            }
+           
+            a {
+                color: $text_blue_secondary;
+                font-size: $font_size;
+                font-weight: bold;
+                i {
+
+                    font-size: $font_size - 3px;
+                }
+                .arrowhite {
+                    display: none;
+                }
+                &:hover {
+                    background-color: $backg_blue_dark;
+                    padding: ($spacing / 2) 5px;
+                    color: $text_color_white;
+                    border-radius: $border_radius;
+                    .arrowhite {
+                        display: inline-block;
+                    }
+                    .chevronBlue {
+                        display: none;
+                    }
+                }
             }
         }
     }

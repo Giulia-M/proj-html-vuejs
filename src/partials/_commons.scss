@@ -15,3 +15,10 @@ section {
 li {
     list-style: none;
 }
+a {
+    text-decoration: none;
+}
+hr {
+    margin-top: $spacing;
+    border: 1px solid $border_grey;
+}

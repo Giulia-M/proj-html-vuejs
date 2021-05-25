@@ -1,0 +1,13 @@
+button {
+    background-color: $backg_blue_light;
+    border-radius: $border_radius;
+    border: $border_blue;
+    padding: $spacing - 15px;
+    margin: ($spacing - 10px) 0;
+    a {
+        color: $text_blue_secondary;
+        font-weight: bold;
+        font-size: $font_size - 2px;
+
+    }
+}
