@@ -29,25 +29,57 @@ nav .img-wrapper img {
   max-width: 120px;
   width: 100%;
 }
-nav .link_TopNav {
+nav ul.link_TopNav {
   display: flex;
   align-items: center;
 }
-nav .link_TopNav li {
-  padding: 0 15px;
+nav ul.link_TopNav li {
+  position: relative;
+  font-size: 14px;
+  padding: 0 33px;
 }
-nav .link_TopNav li a {
+nav ul.link_TopNav li:hover a, nav ul.link_TopNav li:hover i {
+  color: #2f55d4;
+}
+nav ul.link_TopNav li a {
   color: #3c4858;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: bold;
 }
-nav ul li div i:not(:first-of-type) {
+nav ul.link_TopNav li span {
+  padding-left: 4px;
+}
+nav ul.link_TopNav li span i {
+  font-size: 11px;
+}
+nav ul.link_TopNav li span i:hover {
+  color: #2f55d4;
+}
+nav ul.link_TopNav ul.downMenu {
+  position: absolute;
+  top: 24px;
+  left: 1px;
+  border: 1px solid #2f55d41a;
+  background-color: #2f55d41a;
+}
+nav ul.link_TopNav ul.downMenu li {
+  padding: 0 5px;
+  border: 1px solid #2f55d41a;
+}
+nav ul.iconsNavbar li div i:not(:first-of-type) {
   background: #2f55d41a;
   padding: 10px;
   color: #2f55d4;
   border-radius: 10px;
+  cursor: pointer;
 }
-nav ul li div i:first-of-type {
+nav ul.iconsNavbar li div i:not(:first-of-type):hover {
+  background-color: #2f55d4;
+  color: #ffffff;
+}
+nav ul.iconsNavbar li div i:first-of-type {
+  cursor: pointer;
   color: #adb5bd;
   margin-right: 6.6666666667px;
 }

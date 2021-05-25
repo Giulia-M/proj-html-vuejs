@@ -28,23 +28,22 @@
                 </div>
 
                 <ul class="link_TopNav">
-                    <li  v-for="textLink in navbarLinks" >
+                    <li v-for="textLink in navbarLinks" @click="clickMenu(textLink)">
                         <a :href="textLink.link" v-if="textLink.link">{{textLink.text}}</a>
-                        
-                        <!-- non funziona -->
-                        <span @click="clickMenu(textLink)" >
+
+                        <span>
+                            
+
                             <i class="fas " :class="textLink.icon"></i>
 
-                            <!-- dropdown NON MI FUNZIONA-->
                             
-                           
 
-                                <ul >
-                                    <li v-if="textLink.pullDownMenu" v-for="subtitle in textLink.elementDropdown">
-                                        <a :href="subtitle.link" >{{subtitle.text}}</a>
-                                    </li>
-                                </ul>
-                            
+                            <ul class="downMenu">
+                                <li v-if="textLink.pullDownMenu" v-for="subtitle in textLink.elementDropdown">
+                                    <a :href="subtitle.link">{{subtitle.text}}</a>
+                                </li>
+                            </ul>
+
                         </span>
 
                     </li>
@@ -53,7 +52,7 @@
                 </ul>
 
                 <!--icone   -->
-                <ul>
+                <ul class="iconsNavbar">
                     <li>
                         <div v-for="button in navbarIcons">
                             <i class="fas " :class="button.icon[0]"></i>
@@ -75,13 +74,14 @@
         <main class="container">
 
             <!-- section 1 con background -->
-            <section >
+            <section>
                 <div class="row">
                     <div class="col-6">
                         <button><a href="#">Development</a></button>
                         <h1>A Complete <br>
-                        Developer Toolset</h1>
-                        <p>Launch your campaign and benefit from our expertise on designing and managing conversion centered bootrstap4 html page.</p>
+                            Developer Toolset</h1>
+                        <p>Launch your campaign and benefit from our expertise on designing and managing conversion
+                            centered bootrstap4 html page.</p>
 
                         <button><a href="#">Get Started</a></button>
                         <button><a href="#">Documentation</a></button>
@@ -97,7 +97,7 @@
 
             <!-- section 2 con background -->
             <section class="wrapBrand">
-                
+
                 <div>
                     <img src="img/amazon.svg" alt="amazon">
 
@@ -123,7 +123,7 @@
                     <img src="img/spotify.svg" alt="spotify">
                 </div>
 
-                
+
             </section>
 
 
@@ -131,7 +131,8 @@
 
             <section class="features">
                 <h2>Key Features</h2>
-                <p>Start working with <span>Landrick</span>that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                <p>Start working with <span>Landrick</span>that can provide everything you need to generate awareness,
+                    drive traffic, connect.</p>
                 <div class="row">
                     <div class="col-3">
                         <div>
@@ -139,8 +140,8 @@
                             <h3>Modular</h3>
                             <p>Composed in a pseudo-Latin language which more or less corresponds.</p>
                             <!-- effetto hover -->
-                            <a href="#">Read More 
-                                <i class="fas fa-chevron-right"></i> 
+                            <a href="#">Read More
+                                <i class="fas fa-chevron-right"></i>
                             </a>
                         </div>
                     </div>
@@ -150,8 +151,8 @@
                             <h3>Responsive</h3>
                             <p>Composed in a pseudo-Latin language which more or less corresponds.</p>
                             <!-- effetto hover -->
-                            <a href="#">Read More 
-                                <i class="fas fa-chevron-right"></i> 
+                            <a href="#">Read More
+                                <i class="fas fa-chevron-right"></i>
                             </a>
                         </div>
                     </div>
@@ -161,8 +162,8 @@
                             <h3>Customizable</h3>
                             <p>Composed in a pseudo-Latin language which more or less corresponds.</p>
                             <!-- effetto hover -->
-                            <a href="#">Read More 
-                                <i class="fas fa-chevron-right"></i> 
+                            <a href="#">Read More
+                                <i class="fas fa-chevron-right"></i>
                             </a>
                         </div>
                     </div>
@@ -172,8 +173,8 @@
                             <h3>Scalable</h3>
                             <p>Composed in a pseudo-Latin language which more or less corresponds.</p>
                             <!-- effetto hover -->
-                            <a href="#">Read More 
-                                <i class="fas fa-chevron-right"></i> 
+                            <a href="#">Read More
+                                <i class="fas fa-chevron-right"></i>
                             </a>
                         </div>
                     </div>
@@ -184,10 +185,12 @@
             <section>
                 <h5>Quickstart</h5>
                 <h2>Awesome isn't it? Let's dive in!</h2>
-                <p>Start working with Landrick that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                <p>Start working with Landrick that can provide everything you need to generate awareness, drive
+                    traffic, connect.</p>
                 <div class="wrapNpm">
                     <ul>
-                        <li :class="text.active === true ? 'background' : 'none'" v-for=" text in listLandrick" @click.prevent="clickText(text)">
+                        <li :class="text.active === true ? 'background' : 'none'" v-for=" text in listLandrick"
+                            @click.prevent="clickText(text)">
                             <a href="#">{{text.text}} </a>
                         </li>
                         <li>nuget</li>
@@ -207,7 +210,7 @@
                         </div>
 
                     </div>
-                    
+
                 </div>
             </section>
 
@@ -218,25 +221,26 @@
                     <div class="col-6">
 
                         <h2>Build tools and <br>
-                        extensive documention</h2>
-                        <p>You can combine all the Landrick templates into a single one, you can take a component from the Application theme and use it in the Website.</p>
+                            extensive documention</h2>
+                        <p>You can combine all the Landrick templates into a single one, you can take a component from
+                            the Application theme and use it in the Website.</p>
                         <div>
                             <div><i class="far fa-check-circle"></i>Digital Marketing Solutions for Tomorrow</div>
                             <div><i class="far fa-check-circle"></i>Our Talented & Experienced Marketing Agency</div>
                             <div><i class="far fa-check-circle"></i>Create your own skin to match your brand</div>
-        
-        
+
+
                         </div>
                         <button><a href="#">Read More</a><i class="fas fa-arrow-right"></i></button>
                     </div>
 
-                    
+
                     <div class="col-6">
                         <div>
                             <img src="img/1.png" alt="grafico">
                         </div>
                     </div>
-                    
+
 
                 </div>
             </section>
@@ -244,7 +248,8 @@
             <!-- sezione 6 -->
             <section class="sec6">
                 <h2>Our rates for developer from landrick team</h2>
-                <p>Start working with <span>Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                <p>Start working with <span>Landrick</span> that can provide everything you need to generate awareness,
+                    drive traffic, connect.</p>
 
                 <div class="wrap-options">
                     <div>
@@ -310,7 +315,8 @@
             <section class="section7">
                 <div>
                     <h2>Want to be among the first to find out?</h2>
-                    <p>Start working with <span>Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                    <p>Start working with <span>Landrick</span> that can provide everything you need to generate
+                        awareness, drive traffic, connect.</p>
 
                     <div class="emailWrapper">
                         <input type="text" placeholder="Email Address">
@@ -321,14 +327,15 @@
         </main>
 
         <!-- FOOTER -->
-        <footer >
+        <footer>
             <div class="row container">
                 <div class="col-4">
                     <div class="img-logo">
                         <img src="img/logo-light.png" alt="logo">
                     </div>
                     <div>
-                        <p>Start working with Landrick that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                        <p>Start working with Landrick that can provide everything you need to generate awareness, drive
+                            traffic, connect.</p>
 
                         <div>
                             <i class="fab fa-facebook-square"></i>
@@ -345,7 +352,7 @@
 
                             <ul>
                                 <li v-for="link in footerLink">
-                                    
+
                                     <a href="#" v-if="link.text">{{link.text}}</a>
                                     <i class="fas "></i>
 

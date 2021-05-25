@@ -1,4 +1,5 @@
 nav {
+
     padding: $spacing 0;
     display: flex;
     justify-content: space-between;
@@ -13,34 +14,85 @@ nav {
         }
     }
 
-    .link_TopNav {
+    ul.link_TopNav {
         display: flex;
         align-items: center;
+        
 
         li {
-            // list-style: none;
-            padding: 0 ($spacing - 5px);
+            position: relative;
+            font-size: $font_size;
+            padding: 0 ($spacing + 13px);
+            &:hover  {
+                
+                a, i {
+                    color:$text_blue_secondary;
+                }
+            }
+                
             a {
                 color:$text_grey_dark;
                 text-decoration: none;
                 text-transform: uppercase;
+                font-weight: bold;
+                
+                
+            }
+          
+            span {
+              
+                padding-left: $spacing - 16px;
+                i {
+                    font-size: $font_size - 3px;
+                    
+                    &:hover {
+                        color:$text_blue_secondary;
+                    }
+                }
+                
+                
             }
             
+            
         }
-        
+        ul.downMenu {
+            position: absolute;
+            top: 24px;
+            left: 1px;
+            border: 1px solid $border_blue_light;
+            background-color: $backg_blue_light;
+
+            li {
+                padding: 0 ($spacing - 15px);
+                border: 1px solid $border_blue_light;
+
+              a {
+
+              }  
+            }
+        }
     }
-    ul {
+    ul.iconsNavbar {
+       
         li {
+            
             div {
                 i:not(:first-of-type) {
+                    &:hover {
+                        background-color:$backg_blue_dark;
+                        color: $text_color_white;
+                    }
                     background: $backg_blue_light;
                     padding: $spacing / 2;
                     color:$text_blue_secondary;
                     border-radius: $border_radius;
+                    cursor: pointer;
+
+                   
                    
                 }
                 i:first-of-type {
-                   
+                    cursor: pointer;
                     color: $text_grey;
                     margin-right: $spacing / 3;
                     

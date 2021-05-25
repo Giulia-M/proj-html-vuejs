@@ -148,7 +148,7 @@ const app = new Vue({
 
     },
     methods: {
-        //NON FUNZIONA
+       
         clickMenu(currentLink) {
             if (!currentLink.elementDropdown) {
                 return
