@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 .container {
@@ -107,6 +108,7 @@ section .row .col-6 {
   width: 50%;
 }
 section .row .col-6 h1 {
+  font-size: 42px;
   margin: 10px 0;
 }
 section .row .col-6 p, section .row .col-6 h5 {
@@ -294,12 +296,32 @@ footer .row .col-8 {
 button {
   background-color: #2f55d41a;
   border-radius: 10px;
-  border: #2f55d4;
-  padding: 5px;
+  border: 1px solid #2f55d4;
+  padding: 0 4px;
   margin: 10px 0;
 }
 button a {
   color: #2f55d4;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 9px;
+  line-height: 22px;
+}
+
+.dark_btn {
+  background-color: #2f55d4;
+  padding: 13px 24px;
+  margin: 10px 10px 0 0;
+}
+.dark_btn a {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.light_btn {
+  background-color: #fff;
+  padding: 13px 24px;
+}
+.light_btn a {
+  color: #2f55d4;
+  font-size: 14px;
 }

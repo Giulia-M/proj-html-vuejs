@@ -12,6 +12,7 @@ section {
         .col-6 {
             width:$col-6;
             h1 {
+                font-size: $font_size * 3;
                 margin: ($spacing - 10px) 0;
             }
             p, h5 {

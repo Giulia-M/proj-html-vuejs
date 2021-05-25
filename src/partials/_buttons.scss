@@ -1,13 +1,33 @@
 button {
     background-color: $backg_blue_light;
     border-radius: $border_radius;
-    border: $border_blue;
-    padding: $spacing - 15px;
+    border: 1px solid $border_blue;
+    padding: 0 ($spacing - 16px);
     margin: ($spacing - 10px) 0;
     a {
         color: $text_blue_secondary;
         font-weight: bold;
-        font-size: $font_size - 2px;
+        font-size: $font_size - 5px;
+        line-height: 22px;
 
+    }
+}
+
+.dark_btn {
+    background-color: $backg_blue_dark;
+    padding: ($spacing - 7px) ($spacing + 4);
+    margin: ($spacing - 10px) ($spacing - 10px) 0 0;
+
+    a {
+        color: $text_color_white;
+        font-size: $font-size;
+    }
+}
+.light_btn {
+    background-color: $backg_white;
+    padding: ($spacing - 7px) ($spacing + 4);
+    a {
+        color: $backg_blue_dark;
+        font-size: $font-size;
     }
 }
