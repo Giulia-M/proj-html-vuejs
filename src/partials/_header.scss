@@ -70,33 +70,21 @@ nav {
             }
         }
     }
-    ul.iconsNavbar {
-       
-        li {
-            
-            div {
-                i:not(:first-of-type) {
-                    &:hover {
-                        background-color:$backg_blue_dark;
-                        color: $text_color_white;
-                    }
-                    background: $backg_blue_light;
-                    padding: $spacing / 2;
-                    color:$text_blue_secondary;
-                    border-radius: $border_radius;
-                    cursor: pointer;
-                    box-shadow: 0 0 10px $border_blue;
-
-                   
-                   margin-right: $spacing - 6px;
-                }
-                i:first-of-type {
-                    cursor: pointer;
-                    color: $text_grey;
-                    margin-right: $spacing / 3;
-                    
-                }
+    .iconsNavbar {
+        i {
+            &:hover {
+                background-color:$backg_blue_dark;
+                color: $text_color_white;
             }
+            background: $backg_blue_light;
+            padding: $spacing / 2;
+            color:$text_blue_secondary;
+            border-radius: $border_radius;
+            cursor: pointer;
+            box-shadow: 0 0 10px $border_blue;
+
+            margin-right: $spacing - 6px;
         }
+               
     }
 }

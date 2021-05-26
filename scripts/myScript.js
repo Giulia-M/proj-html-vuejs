@@ -1,7 +1,7 @@
 const app = new Vue({
     el: "#app",
     data: {
-
+        state: "close",
         
         navbarLinks: [
             {
@@ -163,7 +163,8 @@ const app = new Vue({
         },
         clickText(currentText) {
             currentText.active = !currentText.active;
-        }
+        },
+        
 
     },
 

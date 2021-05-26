@@ -44,6 +44,10 @@ p {
   color: #8492a6;
 }
 
+.d-flex {
+  display: flex;
+}
+
 nav {
   padding: 20px 0;
   display: flex;
@@ -93,7 +97,7 @@ nav ul.link_TopNav ul.downMenu li {
   padding: 0 5px;
   border: 1px solid #2f55d41a;
 }
-nav ul.iconsNavbar li div i:not(:first-of-type) {
+nav .iconsNavbar i {
   background: #2f55d41a;
   padding: 10px;
   color: #2f55d4;
@@ -102,14 +106,9 @@ nav ul.iconsNavbar li div i:not(:first-of-type) {
   box-shadow: 0 0 10px #2f55d4;
   margin-right: 14px;
 }
-nav ul.iconsNavbar li div i:not(:first-of-type):hover {
+nav .iconsNavbar i:hover {
   background-color: #2f55d4;
   color: #ffffff;
-}
-nav ul.iconsNavbar li div i:first-of-type {
-  cursor: pointer;
-  color: #adb5bd;
-  margin-right: 6.6666666667px;
 }
 
 .bestseller:after {
@@ -581,6 +580,57 @@ footer .my_arrow {
   border: 1px solid #2f55d4;
   margin-right: 20px;
   background-color: #2f55d4;
+}
+
+label {
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  padding: 5px 12px;
+  transition: all 1s ease;
+  border-radius: 0;
+  box-shadow: 1px 1px 5px rgba(211, 199, 199, 0.747);
+}
+label input {
+  transition: width 1s ease, opacity 0.5s ease 0.5s;
+  text-indent: 40px;
+  opacity: 1;
+  width: 180px;
+  height: 25px;
+  border: 0;
+  outline: none;
+}
+label[data-state=close] {
+  border-radius: 30px;
+  padding: 5px 5px;
+  transition: all 1s ease;
+}
+label[data-state=close]::after {
+  width: 0%;
+  transition: all 0.3s ease;
+}
+label[data-state=close] i {
+  pointer-events: none;
+}
+label[data-state=close] input {
+  width: 28px;
+  height: 25px;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.5s ease, width 1s ease;
+}
+
+form {
+  position: relative;
+  margin-right: 10px;
+}
+
+.my_search_icon {
+  cursor: pointer;
+  color: #adb5bd;
+  position: absolute;
+  top: 11px;
+  left: 10px;
 }
 
 button {
