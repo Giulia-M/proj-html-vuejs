@@ -40,7 +40,7 @@ nav {
             }
           
             span {
-              
+               
                 padding-left: $spacing - 16px;
                 i {
                     font-size: $font_size - 3px;
@@ -55,7 +55,9 @@ nav {
             
             
         }
-        ul.downMenu {
+
+        
+        .downMenu {
             position: absolute;
             top: 24px;
             left: 1px;
@@ -63,9 +65,17 @@ nav {
             background-color: $backg_blue_light;
 
             li {
-                padding: 0 ($spacing - 15px);
+                padding: ($spacing - 5px) ($spacing - 14px);
                 border: 1px solid $border_blue_light;
+                a {
+                    font-size: $font-size;
+                    text-transform: none;
+                    &:hover {
+                        color: $text_blue;
 
+                    }
+                }
+                
               
             }
         }

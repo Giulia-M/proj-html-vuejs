@@ -73,7 +73,7 @@
                     
                     z-index: -1;
                     color: $backg_blue_light;
-                    font-size: 220px;
+                    font-size: $spacing * 11;
                     left: 38px;
                     top: 9px;
                     display: none;
@@ -293,10 +293,7 @@
             border-radius: $border_radius;
 
             &:hover {
-                // box-shadow: 0px 4px 2px -2px $border_blue;
-                // box-shadow:0px 0px 5px #ccc;
-                // box-shadow: 0px 15px 10px -15px #111;  
-                // border-bottom: 1px solid $backg_blue_dark;
+                
 
                 box-shadow: -2px 11px 23px -10px $btn_box_shadow;
                 border-bottom: 2px solid $text_blue_secondary;
@@ -316,6 +313,7 @@
                 color: $text_grey_secondary;
                 font-size: $font_size;
                 margin: $spacing /2 0;
+                font-weight: bold;
                 i {
                     color: $text_blue_secondary;
                     margin-right:  ($spacing / 2);

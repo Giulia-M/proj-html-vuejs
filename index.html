@@ -37,13 +37,16 @@
 
                             <i class="fas " :class="textLink.icon"></i>
 
-
+                           
 
                             <ul class="downMenu">
                                 <li v-if="textLink.pullDownMenu" v-for="subtitle in textLink.elementDropdown">
                                     <a :href="subtitle.link">{{subtitle.text}}</a>
                                 </li>
                             </ul>
+                        
+                           
+
 
                         </span>
 

@@ -93,16 +93,23 @@ nav ul.link_TopNav li span i {
 nav ul.link_TopNav li span i:hover {
   color: #2f55d4;
 }
-nav ul.link_TopNav ul.downMenu {
+nav ul.link_TopNav .downMenu {
   position: absolute;
   top: 24px;
   left: 1px;
   border: 1px solid #2f55d41a;
   background-color: #2f55d41a;
 }
-nav ul.link_TopNav ul.downMenu li {
-  padding: 0 5px;
+nav ul.link_TopNav .downMenu li {
+  padding: 15px 6px;
   border: 1px solid #2f55d41a;
+}
+nav ul.link_TopNav .downMenu li a {
+  font-size: 14px;
+  text-transform: none;
+}
+nav ul.link_TopNav .downMenu li a:hover {
+  color: #007bff;
 }
 nav .iconsNavbar i {
   background: #2f55d41a;
@@ -404,6 +411,7 @@ nav .iconsNavbar i:hover {
   color: #8492a6;
   font-size: 14px;
   margin: 10px 0;
+  font-weight: bold;
 }
 .wrapperBuy .wrap-options .col-4 p i {
   color: #2f55d4;
@@ -657,6 +665,7 @@ button {
   border: 1px solid #2f55d4;
   padding: 0 4px;
   margin: 10px 0;
+  transition: 0.3s;
 }
 button a {
   color: #2f55d4;
@@ -669,6 +678,10 @@ button a {
   background-color: #2f55d4;
   padding: 13px 24px;
   margin: 10px 10px 0 0;
+}
+.dark_btn:hover {
+  box-shadow: -6px 7px 17px -3px #243466;
+  background-color: #0b1e5a;
 }
 .dark_btn a {
   color: #ffffff;
@@ -687,7 +700,7 @@ button a {
 .new_btn {
   background-color: #2f55d41a;
   border-radius: 21px;
-  border: 1px solid #f8f9fc1a;
+  border: 1px solid #152b6e1a;
   padding: 7px 26px;
 }
 

@@ -4,6 +4,8 @@ button {
     border: 1px solid $border_blue;
     padding: 0 ($spacing - 16px);
     margin: ($spacing - 10px) 0;
+    transition: .3s;
+
     a {
         color: $text_blue_secondary;
         font-weight: bold;
@@ -17,7 +19,10 @@ button {
     background-color: $backg_blue_dark;
     padding: ($spacing - 7px) ($spacing + 4);
     margin: ($spacing - 10px) ($spacing - 10px) 0 0;
-
+    &:hover {
+    box-shadow: -6px 7px 17px -3px $box_shadow_btn;
+    background-color: $backg_blue_dark_plus;
+    }
     a {
         color: $text_color_white;
         font-size: $font-size;
@@ -34,7 +39,8 @@ button {
 .new_btn {
     background-color: $backg_blue_light;
     border-radius: $border_radius_secondary;
-    border:1px solid $border_white_secondary;
+    // border:1px solid $border_white_secondary;
+    border: 1px solid $border_btn;
     padding:  $padding_new_btn;
 }
 .large_btn {
@@ -71,8 +77,8 @@ button {
 
     text-indent: 10px;
 
-    box-shadow: -6px 7px 17px -3px #243466;
-    border: 2px solid #243466;
+    box-shadow: -6px 7px 17px -3px $box_shadow_btn;
+    border: 2px solid $box_shadow_btn;
 }
 .medium_btn {
     width: 206px;
