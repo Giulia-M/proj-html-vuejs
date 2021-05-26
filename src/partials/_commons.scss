@@ -11,7 +11,7 @@
     margin: auto;
 }
 section {
-    padding: ($spacing * 5) 0;
+    padding: ($spacing * 3) 0;
 }
 li {
     list-style: none;
@@ -41,4 +41,10 @@ p {
 }
 .d-flex {
     display: flex;
+}
+.common-parag {
+    line-height: $spacing + 10px;
+    font-size: $font-size;
+    margin-bottom: $spacing + 10px;
+    font-weight: bold;
 }

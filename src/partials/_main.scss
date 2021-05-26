@@ -20,6 +20,9 @@
                 p, h5 {
                     color: $text_grey_secondary;
                 }
+                .padd-left {
+                    padding-left: $spacing;
+                }
             }
         }
     
@@ -44,15 +47,15 @@
         margin: $spacing 0;
         font-size: $font_size *2;
     }
-    p {
-
-        color: $text_grey;
+    .common-parag {
+       
+        width: $width_55;
     }
 
     .row {
         display: flex;
         .col-3 {
-            width: 25%;
+            width: $col-3;
             padding: $spacing;
             .backg_Modules {
                 padding: ($spacing * 2) $spacing; 
@@ -61,11 +64,11 @@
                 position: relative;
                 overflow: hidden;
                 &:hover {
-                    #backgIcon {
+                    .backgIcon {
                         display: block;
                     }
                 }
-                #backgIcon{
+                .backgIcon{
                     position: absolute;
                     
                     z-index: -1;
@@ -80,12 +83,13 @@
                 }
                 p {
                     margin: $spacing 0;
+                    font-size: $font-size;
 
                 }
-                i:not(a > i, #backgIcon){
-                    background: #2f55d41a;
+                i:not(a > i, .backgIcon){
+                    background: $border_blue_light;
                     padding: $spacing - 4px;
-                    color: #2f55d4;
+                    color: $border_blue;
                     border-radius: 10px;
                     cursor: pointer;
                     margin-bottom: 10px;
@@ -124,7 +128,7 @@
 //sezione 3
 .wrptext {
     text-align: center;
-    width: 80%;
+    width: $width_55;
     margin: auto;
     h5 {
         color: $backg_blue_dark;
@@ -136,9 +140,8 @@
     p {
         color: $text_grey_secondary;
         margin-bottom: $spacing * 2;
-
-       
     }
+   
 }
 .wrapNpm {
     width: 65%;
@@ -181,6 +184,7 @@
     div {
         margin-right: $spacing;
         span {
+            color: $text_grey_secondary;
             i {
 
                 margin-right: ($spacing / 2);
@@ -218,8 +222,8 @@
     
     .row {
         display: flex;
-        .col-6 {
-            width: $col-6;
+        .col-7 {
+            width: $col-7;
             h2 {
                 margin: $spacing 0;
                 font-size: $font_size *2;
@@ -246,15 +250,19 @@
                 margin-left: $spacing - 15px;
             }
         }
-        .col-right {
-            margin-left:$spacing * 4;
+        .col-4 {
+            width: $col-4;
+           
+            margin-left: $offset-1;
             div {
                 img {
                     max-width: $graphic_width;
                     width: $img_width;
                 }
             }
+            
         }
+        
     }
 }
 
@@ -266,6 +274,8 @@
     .text-Land {
         color: $text_grey_secondary;
         text-align: center;
+        margin: auto;
+        width: $width_55;
         margin-bottom: $spacing * 3;
       
     }
@@ -340,7 +350,7 @@
 
 .secSubscribe {
     text-align: center;
-    width:$width_col_sectionSubsribe;
+    width:$width-38;
     margin-bottom: $spacing * 4;
     p {
         line-height: 30px;

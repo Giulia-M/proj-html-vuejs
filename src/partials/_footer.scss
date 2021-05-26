@@ -1,6 +1,7 @@
 footer {
     background-color:$back_footer;
     padding-bottom: $spacing *3;
+    font-size: $font-size;
     .row {
         display: flex;
         padding-top: $spacing * 2;
@@ -102,7 +103,7 @@ footer {
                     }
                     .my_msg_icon {
                         position: absolute;
-                        top: 24px;
+                        top: $spacing + 7;
                         color: $text_grey;
                         left: 8px;
                     }
