@@ -125,6 +125,9 @@ footer {
         border-bottom: 1px solid $hr_color;
         margin-top: 50px;
     }
+    .wrapp_arrow {
+        align-items: center;
+    }
     .paym_card {
         display: flex;
         justify-content: space-between;
@@ -138,7 +141,18 @@ footer {
         }
         img {
             width: $payment_card_width;
+            cursor: pointer;
         }
+       
     }
+    .my_arrow {
+        box-shadow: -6px 7px 17px -3px #243466;
 
+        padding: ($spacing - 5px) $spacing;
+        color: $text_color_white;
+        border-radius: $border_radius;
+        border: 1px solid $backg_blue_dark;
+        margin-right: $spacing;
+        background-color: $backg_blue_dark;
+    }
 }

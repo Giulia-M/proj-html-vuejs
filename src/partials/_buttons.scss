@@ -77,3 +77,19 @@ button {
 .medium_btn {
     width: 206px;
 }
+
+.setting_fixed_wrap {
+    position: fixed;
+    top: $spacing * 5;
+    box-shadow: 0 0 10px #ccc;
+    background-color: $background;
+    padding: $spacing;
+    border-top-right-radius: $border_radius_secondary;
+    border-bottom-right-radius: $border_radius_secondary;
+
+    i {
+        color: $text_blue;
+        font-size: $font_size + 5px;
+        
+    }
+}

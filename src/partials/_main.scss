@@ -1,7 +1,8 @@
 
 // sezione 1 
 .back_color_light {
-    background-color:#f8f9fc;
+    background-color:$backg_white_secondary;
+   
     /* Curved corners */
     border-bottom-left-radius: 50% 21%;
     border-bottom-right-radius: 50% 16%;
