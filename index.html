@@ -37,15 +37,15 @@
 
                             <i class="fas " :class="textLink.icon"></i>
 
-                           
+
 
                             <ul class="downMenu">
                                 <li v-if="textLink.pullDownMenu" v-for="subtitle in textLink.elementDropdown">
                                     <a :href="subtitle.link">{{subtitle.text}}</a>
                                 </li>
                             </ul>
-                        
-                           
+
+
 
 
                         </span>
@@ -56,22 +56,22 @@
                 </ul>
 
                 <!--icone   -->
-                <ul >
+                <ul>
 
                     <li>
                         <div class="d-flex" v-for="button in navbarIcons">
-                           
+
 
                             <form action="#">
                                 <label :data-state="state" for="search">
-                                    <input type="text" placeholder="Search" 
-                                    @click="state = 'open'"
-                                    @blur="state='close'" />
-                                    <i class="my_search_icon fas " :class="button.icon[0]" @click="" aria-hidden="true"></i>
+                                    <input type="text" placeholder="Search" @click="state = 'open'"
+                                        @blur="state='close'" />
+                                    <i class="my_search_icon fas " :class="button.icon[0]" @click=""
+                                        aria-hidden="true"></i>
 
                                 </label>
 
-                                
+
                             </form>
 
                             <div class="iconsNavbar">
@@ -167,7 +167,7 @@
 
                             <i class="fas fa-layer-group"></i>
                             <h3>Modular</h3>
-                            <p >Composed in a pseudo-Latin language which more or less corresponds.</p>
+                            <p>Composed in a pseudo-Latin language which more or less corresponds.</p>
 
                             <!-- effetto hover -->
 
@@ -258,7 +258,8 @@
                 <div class="checkCircle">
                     <div>
 
-                        <span class="common_span"><i class="far fa-check-circle specialCircle"></i>Organize your data</span>
+                        <span class="common_span"><i class="far fa-check-circle specialCircle"></i>Organize your
+                            data</span>
                     </div>
                     <div>
 
@@ -393,10 +394,24 @@
                         awareness, drive traffic, connect.
                     </p>
 
-                    <div class="emailWrapper">
-                        <input @key.enter="getpopup" type="text" placeholder="Email Address">
-                        <button class="new_btn_vDark"><a href="#">Get Started</a></button>
-                    </div>
+                    <form class="emailWrapper" @submit.prevent="getpopup" >
+
+                        <input 
+                        @blur="validateEmail"
+                        
+                        name="email" 
+                        v-model="email" type="email" 
+                        placeholder="Email Address">
+
+                        <div class="wrp_error" v-if="errors.email">
+
+                            <p class="errorEmail" >Please enter a valid email.</p>
+                        </div>
+
+                        <button type="submit" class="new_btn_vDark">
+                            <a href="#">Get Started</a>
+                        </button>
+                    </form>
                 </div>
             </section>
         </main>

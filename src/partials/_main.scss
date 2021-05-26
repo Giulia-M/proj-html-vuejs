@@ -350,6 +350,7 @@
     text-align: center;
     width:$width-38;
     margin-bottom: $spacing * 4;
+    
     p {
         line-height: 30px;
         font-size: $font_size;
@@ -367,6 +368,15 @@
             border-radius: $border_radius_secondary;
             &:focus {
                 outline: none;
+            }
+        }
+        .wrp_error {
+            .errorEmail {
+                
+                color: $text_red;
+                font-size: $font-size - 4px;
+                font-weight: bold;
+                
             }
         }
         

@@ -2,6 +2,12 @@ const app = new Vue({
     el: "#app",
     data: {
         state: "close",
+
+        email: '',
+        
+        errors: {
+            email: false
+        },
         
         navbarLinks: [
             {
@@ -164,6 +170,17 @@ const app = new Vue({
         clickText(currentText) {
             currentText.active = !currentText.active;
         },
+        getpopup (){
+   
+            console.log({email: this.email})
+            alert(`Benvenuto! L'iscrizione con l'indirizzo ${this.email} è avvenuta con successo!`)
+        },
+
+        validateEmail (){
+            this.errors.email = !this.errors.email
+        }
+        
+        
         
 
     },
