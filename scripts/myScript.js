@@ -73,63 +73,67 @@ const app = new Vue({
             }
         ],
 
-        footerLink: [
-            {
-                text: "About us",
-                icon: "fa-chevron-right "
-            },
-            {
-                text: "Services",
-                icon: "fa-chevron-right "
-            },
-            {
-                text: "Team",
-                icon: "fa-chevron-right "
-            },
-            {
-                text: "Pricing",
-                icon: "fa-chevron-right "
-            },
-            {
-                text: "Project",
-                icon: "fa-chevron-right "
-            },
-            {
-                text: "Careers",
-                icon: "fa-chevron-right "
-            },
-            {
-                text: "Blog",
-                icon: "fa-chevron-right "
-            },
-            {
-                text: "Login",
-                icon: "fa-chevron-right "
-            }
-        ],
+        footerLink: 
+        {
+            companyData: [
+                {
+                    text: "About us",
+                    icon: "fa-chevron-right "
+                },
+                {
+                    text: "Services",
+                    icon: "fa-chevron-right "
+                },
+                {
+                    text: "Team",
+                    icon: "fa-chevron-right "
+                },
+                {
+                    text: "Pricing",
+                    icon: "fa-chevron-right "
+                },
+                {
+                    text: "Project",
+                    icon: "fa-chevron-right "
+                },
+                {
+                    text: "Careers",
+                    icon: "fa-chevron-right "
+                },
+                {
+                    text: "Blog",
+                    icon: "fa-chevron-right "
+                },
+                {
+                    text: "Login",
+                    icon: "fa-chevron-right "
+                }
+            ],
+            footerUsefulLink: [
+                {
+                    text: "Terms of Services",
+                    icon: "fa-chevron-right "
+                },
+                {
+                    text: "Privacy Policy",
+                    icon: "fa-chevron-right "
+                },
+                {
+                    text: "Documentation",
+                    icon: "fa-chevron-right "
+                },
+                {
+                    text: "Changelog",
+                    icon: "fa-chevron-right "
+                },
+                {
+                    text: "Components",
+                    icon: "fa-chevron-right "
+                }
+            ],
 
-        footerUsefulLink: [
-            {
-                text: "Terms of Services",
-                icon: "fa-chevron-right "
-            },
-            {
-                text: "Privacy Policy",
-                icon: "fa-chevron-right "
-            },
-            {
-                text: "Documentation",
-                icon: "fa-chevron-right "
-            },
-            {
-                text: "Changelog",
-                icon: "fa-chevron-right "
-            },
-            {
-                text: "Components",
-                icon: "fa-chevron-right "
-            }
-        ],
+        },
+            
         listLandrick: [
             {
                 text: "npm",

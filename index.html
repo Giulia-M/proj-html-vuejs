@@ -380,52 +380,78 @@
                         <img src="img/logo-light.png" alt="logo">
                     </div>
                     <div>
-                        <p>Start working with Landrick that can provide everything you need to generate awareness, drive
+                        <p>
+                            Start working with Landrick that can provide everything you need to generate awareness, drive
                             traffic, connect.
                         </p>
 
-                        <div>
-                            <i class="fab fa-facebook-square"></i>
-                            <i class="fab fa-instagram"></i>
-                            <i class="fab fa-twitter-square"></i>
-                            <i class="fab fa-linkedin"></i>
+                        <div class="social_icon">
+                            <i class="fab fa-facebook-f my_sc"></i>
+                            <i class="fab fa-instagram my_sc"></i>
+                            <i class="fab fa-twitter  my_sc"></i>
+                            <i class="fab fa-linkedin-in my_sc"></i>
                         </div>
                     </div>
                 </div>
                 <div class="col-8">
                     <div class="row">
-                        <div class="col-3">
+                        <div class="col-2 offset-1">
                             <h4>Company</h4>
 
                             <ul>
-                                <li v-for="link in footerLink">
+                                <li v-for="link in footerLink.companyData">
                                     <i  class="fas " :class="link.icon"></i>
                                     <a href="#" v-if="link.text">{{link.text}}</a>
-                                    
-
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 offset-1">
                             <h4>Useful Links</h4>
 
 
                             <ul>
-                                <li v-for="link in footerUsefulLink">
+                                <li v-for="link in footerLink.footerUsefulLink">
+                                    <i  class="fas " :class="link.icon"></i>
+
                                     <a href="#" v-if="link.text">{{link.text}}</a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 offset-1">
 
                             <h4>Newsletter</h4>
                             <p>Sign up and receive the latest tips via email.</p>
-                            <h6>Write your email <span>*</span></h6>
-                            <input type="text" placeholder="Your email: ">
-                            <button><a href="#">Subscribe</a></button>
+                            <h6>Write your email <span class="red-asterisk">*</span></h6>
+                            <div class="email_input">
+                                <i class="far fa-envelope my_msg_icon"></i>
+                                <input class="dark_input" type="text" placeholder="Your email: ">
+                            </div>
+
+                            <div>
+
+                                <button class="btn_subscribe medium_btn"><a class="text_sub" href="#">Subscribe</a></button>
+                            </div>
                         </div>
 
                     </div>
+                </div>
+            </div>
+
+            <div class="border_bottom">
+            </div>
+
+            <div class="container paym_card">
+                <div>
+                    <p><span>&#169;</span> 2020 Landrick. Design with <span class="heart">&#10084;</span> by Shreethemes.</p>
+                </div>
+                <div>
+                    <img src="img/american-ex.png" alt="">
+                    <img src="img/discover.png" alt="">
+                    <img src="img/master-card.png" alt="">
+                    <img src="img/paypal.png" alt="">
+                    <img src="img/visa.png" alt="">
+
+
                 </div>
             </div>
 

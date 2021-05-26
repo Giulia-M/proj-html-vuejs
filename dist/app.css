@@ -371,8 +371,8 @@ nav ul.iconsNavbar li div i:first-of-type {
   border-radius: 10px;
 }
 .wrapperBuy .wrap-options .col-4:hover {
-  box-shadow: 0px 15px 10px -15px #111;
-  border-bottom: 1px solid #2f55d4;
+  box-shadow: -2px 11px 23px -10px #7976a7;
+  border-bottom: 2px solid #2f55d4;
   border-top: none;
   border-right: none;
   border-left: none;
@@ -432,7 +432,7 @@ nav ul.iconsNavbar li div i:first-of-type {
 }
 
 footer {
-  background-color: #27314f;
+  background-color: #202942;
   padding-bottom: 60px;
 }
 footer .row {
@@ -444,21 +444,66 @@ footer .row .col-4 {
 }
 footer .row .col-4 .img-logo {
   display: inline-block;
+  margin-bottom: 20px;
 }
 footer .row .col-4 .img-logo img {
   max-width: 120px;
   width: 100%;
+}
+footer .row .col-4 p {
+  color: #adb5bd;
+  line-height: 2;
+}
+footer .row .col-4 .social_icon {
+  margin-top: 20px;
+}
+footer .row .col-4 .social_icon .my_sc {
+  border: 1px solid #e9ecef;
+  padding: 5px;
+  padding: 10px 13px;
+  font-size: 14px;
+  color: #adb5bd;
+  border-radius: 9px;
 }
 footer .row .col-8 {
   width: 66.666667%;
 }
 footer .row .col-8 .row {
   display: flex;
-  justify-content: center;
   padding-top: 0;
+}
+footer .row .col-8 .row .col-2 {
+  width: 16.666667%;
+  margin-left: 8.333333%;
+  flex: 1;
+}
+footer .row .col-8 .row .col-2 h4 {
+  color: #ffffff;
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+footer .row .col-8 .row .col-2 a {
+  color: #adb5bd;
+  vertical-align: middle;
+  line-height: 2;
+}
+footer .row .col-8 .row .col-2 i {
+  color: #adb5bd;
+  font-size: 9px;
 }
 footer .row .col-8 .row .col-3 {
   width: 25%;
+  margin-left: 8.333333%;
+}
+footer .row .col-8 .row .col-3 h4 {
+  color: #ffffff;
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+footer .row .col-8 .row .col-3 a {
+  color: #adb5bd;
+  vertical-align: middle;
+  line-height: 2;
 }
 footer .row .col-8 .row .col-3 i {
   color: #adb5bd;
@@ -466,6 +511,63 @@ footer .row .col-8 .row .col-3 i {
 }
 footer .row .col-8 .row .col-4 {
   width: 33.333333%;
+  margin-left: 8.333333%;
+}
+footer .row .col-8 .row .col-4 h4 {
+  color: #ffffff;
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+footer .row .col-8 .row .col-4 h6 {
+  color: #adb5bd;
+  margin-top: 20px;
+}
+footer .row .col-8 .row .col-4 .red-asterisk {
+  color: #e43f52;
+}
+footer .row .col-8 .row .col-4 .email_input {
+  position: relative;
+}
+footer .row .col-8 .row .col-4 .my_msg_icon {
+  position: absolute;
+  top: 24px;
+  color: #adb5bd;
+  left: 8px;
+}
+footer .row .col-8 .row .col-4 ::-moz-placeholder {
+  color: #adb5bd;
+}
+footer .row .col-8 .row .col-4 :-ms-input-placeholder {
+  color: #adb5bd;
+}
+footer .row .col-8 .row .col-4 ::placeholder {
+  color: #adb5bd;
+}
+footer .row .col-8 .row .col-4 input {
+  color: #adb5bd;
+}
+footer .row .col-8 .row .col-4 .text_sub {
+  color: #007bff;
+  font-size: 14px;
+}
+footer .border_bottom {
+  border-bottom: 1px solid #3a4d5f;
+  margin-top: 50px;
+}
+footer .paym_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+}
+footer .paym_card p {
+  color: #adb5bd;
+}
+footer .paym_card .heart {
+  color: #e43f52;
+}
+footer .paym_card img {
+  width: 50px;
 }
 
 button {
@@ -524,4 +626,29 @@ button a {
 .new_btn_vDark a {
   color: #ffffff;
   font-size: 14px;
+}
+
+.dark_input {
+  background-color: #27314f;
+  padding: 13px 24px;
+  margin: 10px 10px 0 0;
+  border-radius: 10px;
+  border: 0px solid;
+  outline: none;
+  text-indent: 10px;
+}
+
+.btn_subscribe {
+  background-color: #27314f;
+  padding: 13px 24px;
+  margin: 10px 10px 0 0;
+  border-radius: 10px;
+  border: 0px solid;
+  text-indent: 10px;
+  box-shadow: -6px 7px 17px -3px #243466;
+  border: 2px solid #243466;
+}
+
+.medium_btn {
+  width: 206px;
 }

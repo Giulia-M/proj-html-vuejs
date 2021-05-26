@@ -1,5 +1,5 @@
 footer {
-    background-color: $backg_grey_secondary;
+    background-color:$back_footer;
     padding-bottom: $spacing *3;
     .row {
         display: flex;
@@ -8,22 +8,74 @@ footer {
             width: $col-4;
             .img-logo {
                 display: inline-block;
+                margin-bottom: $spacing;
                 img {
                     max-width: $img_max_width;
                     width: $img_width;
                 }
             }
+            p {
+                color:$text_grey;
+                line-height: 2;
+            }
+            .social_icon {
+                margin-top: $spacing;
+                .my_sc {
+                    border: 1px solid $border_grey;
+                    padding: $spacing - 15px;
+    
+                  
+                    padding: 10px 13px;
+                    font-size: $font-size;
+                    color: $text_grey;
+                    border-radius: 9px;
+                }
+            }
+            
         }
 
         .col-8 {
             width: $col-8;
             .row {
                 display: flex;
-                justify-content: center;
+              
+                
                 padding-top: 0;
 
+                .col-2 {
+                    width: $col-2;
+                    margin-left: $offset-1;
+                    flex: 1;
+                    h4 {
+                        color: $text_color_white;
+                        font-size: $font-size + 5px;
+                        margin-bottom: $spacing;
+                    }
+                    a {
+                        color: $text_grey;
+                        vertical-align: middle;
+                        line-height: 2;
+
+                    }
+                    i {
+                        color: $text_grey;
+                        font-size: $font_size - 5px;
+                    }
+                }
                 .col-3 {
                     width: $col-3;
+                    margin-left: $offset-1;
+                    h4 {
+                        color: $text_color_white;
+                        font-size: $font-size + 5px;
+                        margin-bottom: $spacing;
+                    }
+                    a {
+                        color: $text_grey;
+                        vertical-align: middle;
+                        line-height: 2;
+
+                    }
                     i {
                         color: $text_grey;
                         font-size: $font_size - 5px;
@@ -31,8 +83,62 @@ footer {
                 }
                 .col-4 {
                     width: $col-4;
+                    margin-left: $offset-1;
+                    
+                    h4 {
+                        color: $text_color_white;
+                        font-size: $font-size + 5px;
+                        margin-bottom: $spacing; 
+                    }
+                    h6 {
+                        color:$text_grey;
+                        margin-top: $spacing;
+                    }
+                    .red-asterisk {
+                        color: $text_red;
+                    }
+                    .email_input {
+                        position: relative;
+                    }
+                    .my_msg_icon {
+                        position: absolute;
+                        top: 24px;
+                        color: $text_grey;
+                        left: 8px;
+                    }
+                    ::placeholder {
+                        color: $text_grey;
+                    }
+                    input {
+                        color: $text_grey;
+                    }
+                    .text_sub {
+                        color: $text_blue;
+                        font-size: $font_size;
+                    }
                 }
             }
         }
     }
+
+    .border_bottom {
+        border-bottom: 1px solid $hr_color;
+        margin-top: 50px;
+    }
+    .paym_card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: $spacing * 2;
+        p {
+            color: $text_grey;
+        }
+        .heart {
+            color: $text_red;
+        }
+        img {
+            width: $payment_card_width;
+        }
+    }
+
 }

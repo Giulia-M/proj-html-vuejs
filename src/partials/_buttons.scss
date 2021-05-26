@@ -53,3 +53,27 @@ button {
         font-size: $font_size;
     }
 }
+.dark_input {
+    background-color: $backg_grey_secondary;
+    padding: ($spacing - 7px) ($spacing + 4);
+    margin: ($spacing - 10px) ($spacing - 10px) 0 0;
+    border-radius: $border_radius;
+    border: 0px solid;
+    outline:none;
+    text-indent: 10px;
+}
+.btn_subscribe {
+    background-color: $backg_grey_secondary;
+    padding: ($spacing - 7px) ($spacing + 4);
+    margin: ($spacing - 10px) ($spacing - 10px) 0 0;
+    border-radius: $border_radius;
+    border: 0px solid;
+
+    text-indent: 10px;
+
+    box-shadow: -6px 7px 17px -3px #243466;
+    border: 2px solid #243466;
+}
+.medium_btn {
+    width: 206px;
+}
