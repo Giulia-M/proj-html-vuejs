@@ -403,13 +403,13 @@
                         v-model="email" type="email" 
                         placeholder="Email Address">
 
-                        <div class="wrp_error" v-if="errors.email">
+                        <div class="wrp_error" v-if="!errors.email">
 
                             <p class="errorEmail" >Please enter a valid email.</p>
                         </div>
 
                         <button type="submit" class="new_btn_vDark">
-                            <a href="#">Get Started</a>
+                            Get Started
                         </button>
                     </form>
                 </div>
