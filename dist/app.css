@@ -85,6 +85,7 @@ nav ul.link_TopNav li a {
   font-weight: bold;
 }
 nav ul.link_TopNav li .wrap_linkBottom {
+  margin: 0 10px;
   position: relative;
   padding-left: 4px;
 }
@@ -97,7 +98,8 @@ nav ul.link_TopNav li .wrap_linkBottom i:hover {
 nav ul.link_TopNav li .wrap_linkBottom .downMenu {
   position: absolute;
   top: 24px;
-  right: 6px;
+  width: 137px;
+  right: -11px;
   background-color: #2f55d41a;
 }
 nav ul.link_TopNav li .wrap_linkBottom .downMenu li {
