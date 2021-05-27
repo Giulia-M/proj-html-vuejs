@@ -404,13 +404,13 @@
                             <p class="errorEmail" >Please enter a valid email.</p>
                         </div> -->
                         
-                        <button type="submit" class="new_btn_vDark" @click="showPopup = true" @close="showPopup = false" >
+                        <button type="submit" class="new_btn_vDark"  @close="showPopup = false" >
                             Get Started
                         </button>
 
 
                         <!-- POPUP @close="showPopup = false" -->
-                        <div v-if="showPopup && !email"  :class="{ successful_message: showPopup === true}">
+                        <div v-if="showPopup && email"  :class="{ successful_message: showPopup === true}">
                             <div class="container_message">
                                 <p class="message_box">
 

@@ -184,6 +184,7 @@ const app = new Vue({
         },
         checkFormEmail(){
             if(this.email) {
+                this.showPopup =true
                 return true
             }
             this.messageError = []
