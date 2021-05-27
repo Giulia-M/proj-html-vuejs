@@ -84,31 +84,31 @@ nav ul.link_TopNav li a {
   text-transform: uppercase;
   font-weight: bold;
 }
-nav ul.link_TopNav li span {
+nav ul.link_TopNav li .wrap_linkBottom {
+  position: relative;
   padding-left: 4px;
 }
-nav ul.link_TopNav li span i {
+nav ul.link_TopNav li .wrap_linkBottom i {
   font-size: 11px;
 }
-nav ul.link_TopNav li span i:hover {
+nav ul.link_TopNav li .wrap_linkBottom i:hover {
   color: #2f55d4;
 }
-nav ul.link_TopNav .downMenu {
+nav ul.link_TopNav li .wrap_linkBottom .downMenu {
   position: absolute;
   top: 24px;
-  left: 1px;
-  border: 1px solid #2f55d41a;
+  right: 6px;
   background-color: #2f55d41a;
 }
-nav ul.link_TopNav .downMenu li {
+nav ul.link_TopNav li .wrap_linkBottom .downMenu li {
   padding: 15px 6px;
   border: 1px solid #2f55d41a;
 }
-nav ul.link_TopNav .downMenu li a {
+nav ul.link_TopNav li .wrap_linkBottom .downMenu li a {
   font-size: 14px;
   text-transform: none;
 }
-nav ul.link_TopNav .downMenu li a:hover {
+nav ul.link_TopNav li .wrap_linkBottom .downMenu li a:hover {
   color: #007bff;
 }
 nav .iconsNavbar i {
@@ -137,7 +137,6 @@ nav .iconsNavbar i:hover {
   transform: rotate(45deg);
   width: 120px;
   display: block;
-  background: #79A70A;
   background: linear-gradient(#f7961c 0%, #f7961c 100%);
   box-shadow: 0 3px 10px -5px black;
   position: absolute;

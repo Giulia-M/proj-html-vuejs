@@ -31,19 +31,21 @@
                 <ul class="link_TopNav">
                     <li v-for="textLink in navbarLinks" @click="clickMenu(textLink)">
                         <a :href="textLink.link" v-if="textLink.link">{{textLink.text}}</a>
-
-                        <span>
+                        <!-- al click il menu a tendina -->
+                        <span class="wrap_linkBottom">
 
 
                             <i class="fas " :class="textLink.icon"></i>
 
-
-
+                            
                             <ul class="downMenu">
                                 <li v-if="textLink.pullDownMenu" v-for="subtitle in textLink.elementDropdown">
                                     <a :href="subtitle.link">{{subtitle.text}}</a>
                                 </li>
                             </ul>
+                            
+
+                            
 
 
 
