@@ -1,7 +1,6 @@
 button {
     background-color: $backg_blue_light;
     border-radius: $border_radius;
-    border: 1px solid $border_blue;
     padding: 0 ($spacing - 16px);
     margin: ($spacing - 10px) 0;
     transition: .3s;
@@ -17,11 +16,15 @@ button {
 
 .dark_btn {
     background-color: $backg_blue_dark;
+    border: 1px solid $backg_blue_dark;
+
     padding: ($spacing - 7px) ($spacing + 4);
     margin: ($spacing - 10px) ($spacing - 10px) 0 0;
     &:hover {
     box-shadow: -6px 7px 17px -3px $box_shadow_btn;
     background-color: $backg_blue_dark_plus;
+    border: 1px solid $backg_blue_dark_plus;
+
     }
     a {
         color: $text_color_white;
@@ -31,6 +34,8 @@ button {
 .light_btn {
     background-color: $backg_white;
     padding: ($spacing - 7px) ($spacing + 4);
+    border: 1px solid $border_blue;
+
     a {
         color: $backg_blue_dark;
         font-size: $font-size;
@@ -56,6 +61,7 @@ button {
     right: 0;
     color: $text_color_white;
     font-size: $font_size;
+    cursor: pointer;
     
 }
 .dark_input {
@@ -97,4 +103,7 @@ button {
         font-size: $font_size + 5px;
         
     }
+}
+.small_btn {
+    border: 1px solid #2f55d4;
 }

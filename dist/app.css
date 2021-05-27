@@ -73,7 +73,7 @@ nav ul.link_TopNav {
 nav ul.link_TopNav li {
   position: relative;
   font-size: 14px;
-  padding: 0 33px;
+  padding: 0 22px;
 }
 nav ul.link_TopNav li:hover a, nav ul.link_TopNav li:hover i {
   color: #2f55d4;
@@ -98,7 +98,7 @@ nav ul.link_TopNav li .wrap_linkBottom i:hover {
 nav ul.link_TopNav li .wrap_linkBottom .downMenu {
   position: absolute;
   top: 24px;
-  width: 137px;
+  width: 122px;
   right: -11px;
   background-color: #2f55d41a;
 }
@@ -668,7 +668,6 @@ form {
 button {
   background-color: #2f55d41a;
   border-radius: 10px;
-  border: 1px solid #2f55d4;
   padding: 0 4px;
   margin: 10px 0;
   transition: 0.3s;
@@ -682,12 +681,14 @@ button a {
 
 .dark_btn {
   background-color: #2f55d4;
+  border: 1px solid #2f55d4;
   padding: 13px 24px;
   margin: 10px 10px 0 0;
 }
 .dark_btn:hover {
   box-shadow: -6px 7px 17px -3px #243466;
   background-color: #0b1e5a;
+  border: 1px solid #0b1e5a;
 }
 .dark_btn a {
   color: #ffffff;
@@ -697,6 +698,7 @@ button a {
 .light_btn {
   background-color: #fff;
   padding: 13px 24px;
+  border: 1px solid #2f55d4;
 }
 .light_btn a {
   color: #2f55d4;
@@ -724,6 +726,7 @@ button a {
   right: 0;
   color: #ffffff;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .dark_input {
@@ -763,4 +766,8 @@ button a {
 .setting_fixed_wrap i {
   color: #007bff;
   font-size: 19px;
+}
+
+.small_btn {
+  border: 1px solid #2f55d4;
 }

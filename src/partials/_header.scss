@@ -22,7 +22,7 @@ nav {
         li {
             position: relative;
             font-size: $font_size;
-            padding: 0 ($spacing + 13px);
+            padding: 0 ($spacing + 2px);
             &:hover  {
 
                 a, i {
@@ -56,7 +56,7 @@ nav {
                 .downMenu {
                     position: absolute;
                     top: 24px;
-                    width: 137px;
+                    width: 122px;
                     right: -11px;
                     background-color: $backg_blue_light;
 
