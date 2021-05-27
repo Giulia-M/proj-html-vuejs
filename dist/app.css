@@ -73,7 +73,7 @@ nav ul.link_TopNav {
 nav ul.link_TopNav li {
   position: relative;
   font-size: 14px;
-  padding: 0 22px;
+  padding: 0 24px;
 }
 nav ul.link_TopNav li:hover a, nav ul.link_TopNav li:hover i {
   color: #2f55d4;
@@ -460,6 +460,29 @@ nav .iconsNavbar i:hover {
   font-size: 10px;
   font-weight: bold;
 }
+.secSubscribe .emailWrapper .successful_message {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  transition: opacity 0.3s ease;
+}
+.secSubscribe .emailWrapper .successful_message .container_message {
+  display: flex;
+}
+.secSubscribe .emailWrapper .successful_message .container_message .message_box {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+  transition: all 0.3s ease;
+}
 
 footer {
   background-color: #202942;
@@ -762,6 +785,7 @@ button a {
   padding: 20px;
   border-top-right-radius: 21px;
   border-bottom-right-radius: 21px;
+  cursor: pointer;
 }
 .setting_fixed_wrap i {
   color: #007bff;

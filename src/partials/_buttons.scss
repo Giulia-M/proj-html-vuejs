@@ -97,6 +97,7 @@ button {
     padding: $spacing;
     border-top-right-radius: $border_radius_secondary;
     border-bottom-right-radius: $border_radius_secondary;
+    cursor: pointer;
 
     i {
         color: $text_blue;

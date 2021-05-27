@@ -4,10 +4,13 @@ const app = new Vue({
         state: "close",
 
         email: '',
+
+        showPopup: false,
         
         errors: {
             email: false
         },
+        messageError: [],
         
         navbarLinks: [
             {
@@ -178,7 +181,20 @@ const app = new Vue({
 
         validateEmail (){
             this.errors.email = !this.errors.email
+        },
+        checkFormEmail(){
+            if(this.email) {
+                return true
+            }
+            this.messageError = []
+            this.errors = {
+                email: false
+            }
+            if(!this.errors.email) {
+                this.messageError.push("Please enter a valid email")
+            }
         }
+
         
         
         

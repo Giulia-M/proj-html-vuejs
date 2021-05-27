@@ -389,24 +389,46 @@
                         to generate
                         awareness, drive traffic, connect.
                     </p>
-
-                    <form class="emailWrapper" @submit.prevent="getpopup" >
-
+                    <!-- @submit.prevent="getpopup" -->
+                    <form class="emailWrapper" @submit.prevent="checkFormEmail" >
+                        <!-- @blur="validateEmail" -->
                         <input 
-                        @blur="validateEmail"
+                        
                         
                         name="email" 
                         v-model="email" type="email" 
                         placeholder="Email Address">
 
-                        <div class="wrp_error" v-if="!errors.email">
+                        <!-- <div class="wrp_error" v-if="!errors.email">
 
                             <p class="errorEmail" >Please enter a valid email.</p>
-                        </div>
-
-                        <button type="submit" class="new_btn_vDark">
+                        </div> -->
+                        
+                        <button type="submit" class="new_btn_vDark" @click="showPopup = true" @close="showPopup = false" >
                             Get Started
                         </button>
+
+
+                        <!-- POPUP @close="showPopup = false" -->
+                        <div v-if="showPopup && !email"  :class="{ successful_message: showPopup === true}">
+                            <div class="container_message">
+                                <p class="message_box">
+
+                                    Benvenuto! La tua iscrizione è avvenuta con successo!
+                                </p>
+                            </div>
+                        </div>
+                        <!-- <div :class="message.popUp === true ? 'optionDeleteMsg' : 'noneOption'"  @click="onPopUpClick(message)">
+                            <ul class="popupStandard">
+                                <li @click.stop="deleteMessage(index)">
+                                    Cancella Messaggio
+                                </li>
+                                <li>
+                                    Info Messaggio
+                                </li>
+                            </ul>
+                           :class="{ active: variabileData === 'pippo' }" => class="active"
+                        </div> -->
                     </form>
                 </div>
             </section>
